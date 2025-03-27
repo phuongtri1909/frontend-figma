@@ -579,3 +579,16 @@ body.menu-open {
         font-size: 14px;
     }
 }
+
+/* product manager */
+
+#product-manager {
+    background-image: url('../images/v3037_6494.png');
+}
+
+#product-manager .title-product-manager{
+    font-size: 50px;
+    font-weight: 600;
+    color: #000000;
+    line-height: 180%;
+}
