@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Oxanium:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="public/assets/css/styles.css">
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar position-relative">
+            <div class="logo-container" style="z-index: 1001;">
+                <img src="public/assets/images/logo.png" alt="" height="35">
+            </div>
+
+            <div class="coords-container position-absolute top-50 start-50 translate-middle d-none d-lg-block">
+                <div class="coords-box">
+                    <div class="coords-text">25.7734° N, 80.1902° W</div>
+                </div>
+            </div>
+
+            <div class="nav-buttons d-md-flex gap-3 ms-auto d-none">
+                <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
+                    <div class="btn-circle d-flex align-items-center position-relative">
+                        <i class="fa-solid fa-chevron-right" style="margin-right: 10.4px;"></i>
+                        <span class="first-letter d-inline-block">P</span>
+                        <span class="text-expand d-inline-block pe-2">rojects</span>
+                    </div>
+                </div>
+
+                <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
+                    <div class="btn-circle d-flex align-items-center position-relative">
+                        <i class="fa-solid fa-chevron-right" style="margin-right: 10.4px;"></i>
+                        <span class="first-letter d-inline-block">R</span>
+                        <span class="text-expand d-inline-block pe-2">esume</span>
+                    </div>
+                </div>
+
+                <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
+                    <div class="btn-circle d-flex align-items-center position-relative">
+                        <i class="fa-solid fa-chevron-right" style="margin-right: 10px;"></i>
+                        <span class="first-letter d-inline-block">C</span>
+                        <span class="text-expand d-inline-block pe-2">ontact</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-menu-toggle d-block d-md-none">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </div>
+        </nav>
+
+        <div class="mobile-menu-overlay">
+            <div class="video-background">
+                <video autoplay muted loop playsinline>
+                    <source src="public/assets/videos/banner.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-overlay"></div>
+
+            <div class="mobile-menu-container">
+
+                <div class="nav-buttons d-flex flex-column align-items-center">
+                    <div class="nav-button position-relative cursor-pointer d-flex align-items-center mb-5">
+                        <div class="btn-circle d-flex align-items-center position-relative">
+                            <i class="fa-solid fa-chevron-right fa-2xl" style="margin-right: 23px;"></i>
+                            <span class="first-letter d-inline-block">P</span>
+                            <span class="text-expand d-inline-block pe-2">rojects</span>
+                        </div>
+                    </div>
+
+                    <div class="nav-button position-relative cursor-pointer d-flex align-items-center mb-5">
+                        <div class="btn-circle d-flex align-items-center position-relative">
+                            <i class="fa-solid fa-chevron-right fa-2xl" style="margin-right: 23px;"></i>
+                            <span class="first-letter d-inline-block">R</span>
+                            <span class="text-expand d-inline-block pe-2">esume</span>
+                        </div>
+                    </div>
+
+                    <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
+                        <div class="btn-circle d-flex align-items-center position-relative">
+                            <i class="fa-solid fa-chevron-right fa-2xl" style="margin-right: 19px;"></i>
+                            <span class="first-letter d-inline-block">C</span>
+                            <span class="text-expand d-inline-block pe-2">ontact</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-menu-footer">
+                    <div class="d-flex justify-content-center align-items-center socials-icons">
+                        <span class="me-4"><img src="public/assets/svg/telegram_fill.svg" alt="" height="27"
+                                width="27"></span>
+                        <span><img src="public/assets/svg/Linkedin--Streamline-Core.svg" alt="" height="27"
+                                width="27"></span>
+                    </div>
+
+                    <div class="coords-container">
+                        <div class="coords-box">
+                            <div class="coords-text">25.7734° N, 80.1902° W</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner" class="d-flex flex-column justify-content-between align-items-center vh-100 position-relative">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="public/assets/videos/banner.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-overlay"></div>
+
+        <div class="banner-wrapper d-flex flex-column justify-content-between w-100 h-100 py-5 mt-7">
+            <div></div>
+            <div class="container">
+                <div class="banner-content">
+                    <div class="banner-text text-center d-flex flex-column align-items-center">
+                        <img src="public/assets/images/logo.png" alt="" height="190">
+                        <p class="mt-md-5 mt-3 text-banner">Product Manager, driving innovation by blending user empathy
+                            with design principles to create and execute impactful product strategies</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about-me" class="d-flex container mt-5">
+
+                <div class="d-none d-md-flex justify-content-center align-items-center socials-icons me-md-auto">
+                    <span class="me-4"><img src="public/assets/svg/telegram_fill.svg" alt="" height="27"
+                            width="27"></span>
+                    <span><img src="public/assets/svg/Linkedin--Streamline-Core.svg" alt="" height="27"
+                            width="27"></span>
+                </div>
+
+                <div class="">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#aboutMeModal" class="scroll-down">
+                        <img src="public/assets/images/avt.jpg" alt="Avatar">
+                        <div class="rotating-text">
+                            <svg viewBox="0 0 200 200">
+                                <path id="curve" class="text-circle" d="M 100, 100
+                                         m -75, 0
+                                         a 75,75 0 1,1 150,0
+                                         a 75,75 0 1,1 -150,0" />
+                                <text>
+                                    <textPath xlink:href="#curve" startOffset="0%" textLength="460">
+                                        About me · About me · About me ·
+                                    </textPath>
+                                </text>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- About Me Modal -->
+                <div class="modal fade" id="aboutMeModal" tabindex="-1" aria-labelledby="aboutMeModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-md">
+                        <div class="modal-content rounded-4">
+
+                            <div class="modal-body p-4">
+                                <div class="text-end">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="text-center mb-4 mb-md-0">
+                                    <img src="public/assets/images/z6447753960881_87ae8cc6445a75f0038c9cc7ca1adf4c.jpg"
+                                        alt="Avatar" class="img-fluid" style="max-width: 350px;">
+                                    <h3 class="mt-3 about-name">Mia Than</h3>
+                                    <p class="text-muted p-0 about-text">I’m a Miami-based, Vietnam-born creative who
+                                        loves transforming insights into innovative, human-centered product designs that
+                                        solve real problems. My approach combines curiosity and empathy, ensuring every
+                                        design decision is driven by what users truly need.</p>
+                                </div>
+
+
+                                <div
+                                    class="skills-tags-container d-inline-flex flex-wrap justify-content-center align-items-start mt-4">
+                                    <div
+                                        class="skill-tag d-flex justify-content-center align-items-center py-2 px-3 me-2 mb-2">
+                                        <div class="skill-tag-text">UX/UI Design</div>
+                                    </div>
+                                    <div
+                                        class="skill-tag d-flex justify-content-center align-items-center py-2 px-3 me-2 mb-2">
+                                        <div class="skill-tag-text">Strategy</div>
+                                    </div>
+                                    <div
+                                        class="skill-tag d-flex justify-content-center align-items-center py-2 px-3 me-2 mb-2">
+                                        <div class="skill-tag-text">Branding</div>
+                                    </div>
+                                    <div
+                                        class="skill-tag d-flex justify-content-center align-items-center py-2 px-3 me-2 mb-2">
+                                        <div class="skill-tag-text">Vision</div>
+                                    </div>
+                                    <div
+                                        class="skill-tag d-flex justify-content-center align-items-center py-2 px-3 me-2 mb-2">
+                                        <div class="skill-tag-text">Startups</div>
+                                    </div>
+                                    <div
+                                        class="skill-tag d-flex justify-content-center align-items-center py-2 px-3 me-2 mb-2">
+                                        <div class="skill-tag-text">Product Management</div>
+                                    </div>
+                                    <div
+                                        class="skill-tag d-flex justify-content-center align-items-center py-2 px-3 me-2 mb-2">
+                                        <div class="skill-tag-text">Sun, Shine, and Everything Nice</div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="d-flex justify-content-center align-items-center socials-icons socials-icons-model me-md-auto mt-4">
+                                    <span class="me-4"><img src="public/assets/svg/telegram_fill.svg" alt="" height="27"
+                                            width="27"></span>
+                                    <span><img src="public/assets/svg/Linkedin--Streamline-Core.svg" alt="" height="27"
+                                            width="27"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="public/assets/js/script.js"></script>
+</body>
+
+</html>

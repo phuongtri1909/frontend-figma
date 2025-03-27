@@ -1,0 +1,581 @@
+body {
+    font-family: 'Albert Sans', sans-serif;
+}
+
+.coords-text {
+    font-family: 'Oxanium', cursive;
+    color: #3C3C3C;
+}
+
+.mt-100 {
+    margin-top: 100rem;
+}
+
+.mt-50{
+    margin-top: 50rem;
+}
+
+.mt-30{
+    margin-top: 30rem;
+}
+
+.mt-20{
+    margin-top: 20rem;
+}
+
+.mt-15{
+    margin-top: 15rem;
+}
+
+.mt-10{
+    margin-top: 10rem;
+}
+
+.mt-7{
+    margin-top: 7rem;
+}
+
+
+/* Header trong suốt và fixed */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Lớp ẩn header khi scroll - sẽ được thêm bằng JavaScript */
+.header-hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+/* nav-button */
+.btn-circle {
+    height: 42px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+/* Nav Buttons */
+.btn-circle:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.btn-circle i {
+    margin-left: 12px;
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+.first-letter {
+    font-weight: 500;
+}
+
+.nav-button:hover .btn-circle:before {
+    width: 100%;
+    border-radius: 21px;
+    background-color: #000; 
+    border-color: #000;
+}
+
+/* Đổi màu text khi hover */
+.nav-button:hover .btn-circle i,
+.nav-button:hover .first-letter,
+.nav-button:hover .text-expand {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+/* Giữ lại màu ban đầu khi không hover */
+.btn-circle i,
+.first-letter,
+.text-expand {
+    position: relative;
+    z-index: 1;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+/* Hiệu ứng active khi click */
+.nav-button:active .btn-circle:before {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Banner video background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #3D96FF 100%, #D4E9FF00 0%, #D4E9FFF2 95%);
+    mix-blend-mode: overlay;
+    z-index: -1;
+}
+
+/* text banner */
+
+.text-banner{
+    font-size: 20px;
+    line-height: 150%;
+    color: #3C3C3C;
+    font-weight: 400;
+    width: 722px;
+}
+
+/* socials-icons */
+
+.socials-icons span{
+    background-color: #fff;
+    color: #838383;
+    padding: 9.2px;
+    border-radius: 50%;
+    border: 1.15px solid #F2F4F7;
+}
+
+.socials-icons span:hover{
+    background-color: #049BE5;
+    color: #fff;
+    border: 1.15px solid #049BE5;
+}
+
+.socials-icons span:hover img{
+   filter: brightness(0) invert(1);
+}
+
+/* Scroll Down Button với text bo cong theo vòng tròn */
+.scroll-down {
+    position: relative;
+    display: block;
+    width: 111px;
+    height: 111px;
+    border-radius: 50%;
+    overflow: visible;
+    margin: 20px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Hình avatar tròn */
+.scroll-down img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Container cho SVG text cong */
+.scroll-down .rotating-text {
+    position: absolute;
+    width: 169px;
+    height: 169px;
+    top: -30px;
+    left: -30px;
+    animation: spin 15s linear infinite;
+    pointer-events: none;
+}
+
+/* Hiệu ứng hover */
+.scroll-down:hover {
+    background-color: #000;
+}
+
+.scroll-down:hover img {
+    opacity: 0;
+}
+
+/* Icon mũi tên khi hover */
+.scroll-down:before {
+    content: ""; /* Xóa content FontAwesome */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px; /* Kích thước của SVG */
+    height: 36px;
+    background-image: url('../svg/ArrowUpRight.svg'); /* Đường dẫn tương đối đến SVG */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.scroll-down:hover:before {
+    opacity: 1;
+}
+
+/* Animation xoay theo quỹ đạo */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Style cho SVG */
+.rotating-text svg {
+    width: 100%;
+    height: 100%;
+}
+
+.rotating-text .text-circle {
+    fill: none;
+}
+
+.rotating-text text {
+    font-size: 19px;
+    font-weight: 600;
+    color: #000;
+    line-height: 150%;
+}
+
+/* mobile-menu-toggle */
+
+.mobile-menu-toggle i{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    color: #847A90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-menu-toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    z-index: 1001; /* Đảm bảo nút luôn nằm trên cùng */
+}
+
+.mobile-menu-toggle:hover {
+    background: #F2F4F7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+body.menu-open .mobile-menu-toggle {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+body.menu-open .mobile-menu-toggle:hover {
+    background: #F2F4F7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Mobile Menu */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #3D96FF 0%, #D4E9FF 100%);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.mobile-menu-overlay .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+}
+
+.mobile-menu-overlay .video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mobile-menu-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.mobile-menu-container .nav-buttons {
+    margin-top: 80px; 
+    margin-bottom: auto; 
+    width: 100%;
+    max-width: 280px;
+}
+
+.mobile-menu-container .nav-button:hover .btn-circle:before {
+    border-radius: 34px;
+}
+
+.mobile-menu-container .socials-icons {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.mobile-menu-container .coords-container {
+    margin-bottom: 20px;
+}
+
+body.menu-open .mobile-menu-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.menu-open .mobile-menu-toggle i {
+    color: #847A90;
+}
+
+body.menu-open {
+    overflow: hidden !important;
+    position: fixed;
+    width: 100%;
+}
+
+.mobile-menu-container .btn-circle i{
+    font-size: 26px !important;
+}
+
+.mobile-menu-container .btn-circle span{
+    font-size: 26px !important;
+    font-weight: 400 !important;
+    line-height: 32.5px;
+    letter-spacing: 4%;
+}
+
+.mobile-menu-container .btn-circle {
+    height: 68.25px;
+}
+
+/* Nav Buttons */
+.mobile-menu-container .btn-circle:before {
+    width: 68.25px;
+    height: 68.25px;
+}
+
+/* Style cho mobile coords-container */
+.mobile-menu-container .coords-container {
+    width: auto;
+    margin-top: 48px;
+}
+
+/* Responsive cho banner section */
+@media (max-width: 991.98px) {
+    .banner-wrapper {
+        padding-top: 80px !important;
+        margin-top: 0 !important;
+    }
+    
+    /* Logo trong banner */
+    .banner-text img {
+        height: 140px; 
+    }
+    
+    /* Text banner */
+    .text-banner {
+        width: 100% !important; 
+        font-size: 16px;
+        padding: 0 15px; 
+    }
+    
+    /* About-me section */
+    #about-me {
+        justify-content: end !important;
+    }
+    
+    /* Điều chỉnh scroll-down (avatar) */
+    .scroll-down {
+        width: 90px;
+        height: 90px;
+        margin: 10px;
+    }
+    
+    /* Điều chỉnh rotating text */
+    .scroll-down .rotating-text {
+        width: 140px;
+        height: 140px;
+        top: -25px;
+        left: -25px;
+    }
+    
+    .rotating-text text {
+        font-size: 16px;
+    }
+}
+
+/* Extra small devices (portrait phones) */
+@media (max-width: 575.98px) {
+    /* Banner wrapper */
+    .banner-wrapper {
+        padding-top: 60px !important;
+        padding-bottom: 20px !important;
+    }
+    
+    /* Logo trong banner */
+    .banner-text img {
+        height: 110px;
+    }
+    
+    /* Text banner */
+    .text-banner {
+        font-size: 14px;
+        margin-top: 1rem !important;
+        line-height: 1.4;
+    }
+    
+    /* About-me section */
+    #about-me {
+        margin-top: 1.5rem !important;
+    }
+    
+    /* Scroll down button nhỏ hơn trên mobile nhỏ */
+    .scroll-down {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .scroll-down .rotating-text {
+        width: 130px;
+        height: 130px;
+        top: -25px;
+        left: -25px;
+    }
+    
+    /* Video background positioning */
+    .video-background video {
+        object-position: center;
+    }
+}
+
+/* Đảm bảo center mobile/tablet */
+@media (max-width: 767.98px) {
+    /* Đối với header khi scroll */
+    header.header-hidden {
+        transform: translateY(-100%);
+    }
+    
+    .d-none-small {
+        display: none !important;
+    }
+    
+    #banner {
+        min-height: 100vh;
+        height: auto;
+    }
+}
+
+
+/* modal */
+
+.about-name{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.about-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    paragraph-spacing: 16px;
+}
+
+.socials-icons-model span{
+    background-color: #F2F4F7 !important;
+}
+
+.socials-icons-model span:hover{
+    background-color: #049BE5 !important;
+    color: #fff !important;
+}
+
+.socials-icons-model span img {
+    filter: invert(40%) sepia(57%) saturate(3532%) hue-rotate(190deg) brightness(101%) contrast(101%);
+}
+
+/* Skill tags trong about modal */
+.skills-tags-container {
+    align-content: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.skill-tag {
+    border-radius: 999px;
+    outline: 1px solid #DADADA;
+    outline-offset: -1px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-tag:hover {
+    background-color: #F2F4F7;
+    outline-color: #bbbbbb;
+}
+
+.skill-tag-text {
+    color: rgba(60, 60, 60, 0.95);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .skill-tag {
+        margin-bottom: 8px;
+    }
+    
+    .skill-tag-text {
+        font-size: 14px;
+    }
+}
