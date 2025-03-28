@@ -91,3 +91,46 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
+
+
+// time line
+// Timeline scroll focus effect
+document.addEventListener('DOMContentLoaded', function() {
+    const timelineEntries = document.querySelector('.timeline-entries');
+    const entries = document.querySelectorAll('.timeline-entry');
+    
+    if (timelineEntries && entries.length > 0) {
+        // Set first entry as active by default
+        entries[0].classList.add('active');
+        
+        // Update active entry based on scroll position
+        timelineEntries.addEventListener('scroll', function() {
+            const scrollTop = timelineEntries.scrollTop;
+            const containerHeight = timelineEntries.offsetHeight;
+            
+            // Find which entry is in the middle of the viewport
+            let activeEntry = null;
+            let smallestDistance = Infinity;
+            
+            entries.forEach(entry => {
+                const rect = entry.getBoundingClientRect();
+                const entryMiddle = rect.top + rect.height / 2;
+                const containerMiddle = timelineEntries.getBoundingClientRect().top + containerHeight / 2;
+                const distance = Math.abs(entryMiddle - containerMiddle);
+                
+                if (distance < smallestDistance) {
+                    smallestDistance = distance;
+                    activeEntry = entry;
+                }
+                
+                // Remove active class from all entries
+                entry.classList.remove('active');
+            });
+            
+            // Add active class to the entry closest to the middle
+            if (activeEntry) {
+                activeEntry.classList.add('active');
+            }
+        });
+    }
+});

@@ -1,0 +1,235 @@
+#work-expt {
+    background-color: #fff;
+    position: relative;
+    padding: 80px 0;
+}
+
+.title-work-exp {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #3C3C3C;
+    margin-bottom: 2rem;
+}
+
+/* Timeline container - remove scrolling from main container */
+.timeline-container {
+    position: relative;
+    overflow: visible;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.timeline-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Timeline entries container - this will be scrollable */
+.timeline-entries {
+    position: relative;
+    height: 450px; /* Adjust height as needed */
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.timeline-entries::-webkit-scrollbar {
+    display: none;
+}
+
+/* Current job entry (fixed at top) */
+.timeline-entry-current {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 64px 0px;
+    z-index: 10;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.timeline-entry-current .timeline-year {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #212121;
+}
+
+.timeline-entry-current .job-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #212121;
+}
+
+.timeline-entry-current .job-des {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #3C3C3C;
+}
+
+.timeline-entry-current .company-info {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #212121;
+    max-width: 210px;
+}
+
+/* Individual timeline entry */
+.timeline-entry {
+    position: relative;
+    padding: 64px 0px;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.timeline-entry .timeline-year{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #7D7F91;
+}
+
+.timeline-entry .job-title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #7D7F91;
+}
+
+.timeline-entry .company-name{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #7D7F91;
+}
+
+/* Active entry (in focus) */
+.timeline-entry.active {
+    opacity: 1;
+}
+
+.timeline-entry.active .timeline-year {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #212121;
+}
+
+.timeline-entry.active .job-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #212121;
+}
+
+.timeline-entry.active .company-name{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #212121;
+    min-width: 210px;
+}
+
+@media (max-width: 767px) {
+    .timeline-container {
+        height: 400px;
+    }
+
+    .timeline-entries {
+        height: 350px;
+    }
+
+    /* REGULAR ENTRIES - SMALLEST */
+    .timeline-entry {
+        padding: 16px 0px;
+    }
+    
+    .timeline-entry .timeline-year {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .timeline-entry .job-title {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .timeline-entry .company-name {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+    /* CURRENT ENTRY - LARGEST */
+    .timeline-entry-current {
+        padding: 32px 0px;
+    }
+    
+    .timeline-entry-current .timeline-year {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .timeline-entry-current .job-title {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .timeline-entry-current .job-des {
+        font-size: 14px;
+    }
+    
+    .timeline-entry-current .company-info {
+        font-size: 16px;
+        font-weight: 600;
+        min-width: unset;
+        max-width: 100%;
+    }
+    
+    /* ACTIVE ENTRY - MEDIUM */
+    .timeline-entry.active {
+        padding: 20px 0px;
+    }
+    
+    .timeline-entry.active .timeline-year {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .timeline-entry.active .job-title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .timeline-entry.active .company-name {
+        font-size: 14px;
+        font-weight: 600;
+        min-width: unset;
+    }
+}
