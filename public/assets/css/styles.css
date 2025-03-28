@@ -450,10 +450,6 @@ body.menu-open {
 
 /* Responsive cho banner section */
 @media (max-width: 991.98px) {
-    .banner-wrapper {
-        padding-top: 80px !important;
-        margin-top: 0 !important;
-    }
     
     /* Logo trong banner */
     .banner-text img {
