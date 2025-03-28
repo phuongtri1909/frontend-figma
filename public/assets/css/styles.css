@@ -508,10 +508,6 @@ body.menu-open {
         line-height: 1.4;
     }
     
-    /* About-me section */
-    #about-me {
-        margin-top: 1.5rem !important;
-    }
     
     /* Scroll down button nhỏ hơn trên mobile nhỏ */
     .scroll-down {
