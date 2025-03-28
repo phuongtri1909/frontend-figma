@@ -27,13 +27,11 @@
 /* Timeline entries container - this will be scrollable */
 .timeline-entries {
     position: relative;
-    height: 450px; /* Adjust height as needed */
+    height: 450px;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: none;
-    /* Firefox */
     -ms-overflow-style: none;
-    /* IE and Edge */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -163,7 +161,7 @@
     }
 
     .timeline-entries {
-        height: 350px;
+        height: 300px;
     }
 
     /* REGULAR ENTRIES - SMALLEST */
