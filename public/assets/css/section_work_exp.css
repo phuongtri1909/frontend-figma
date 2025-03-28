@@ -168,45 +168,45 @@
 
     /* REGULAR ENTRIES - SMALLEST */
     .timeline-entry {
-        padding: 16px 0px;
+        padding: 12px 0px;
     }
     
     .timeline-entry .timeline-year {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 400;
     }
     
     .timeline-entry .job-title {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 400;
     }
     
     .timeline-entry .company-name {
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 400;
     }
     
     /* CURRENT ENTRY - LARGEST */
     .timeline-entry-current {
-        padding: 32px 0px;
+        padding: 28px 0px;
     }
     
     .timeline-entry-current .timeline-year {
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 600;
     }
     
     .timeline-entry-current .job-title {
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 600;
     }
     
     .timeline-entry-current .job-des {
-        font-size: 14px;
+        font-size: 12px;
     }
     
     .timeline-entry-current .company-info {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         min-width: unset;
         max-width: 100%;
@@ -214,21 +214,21 @@
     
     /* ACTIVE ENTRY - MEDIUM */
     .timeline-entry.active {
-        padding: 20px 0px;
+        padding: 16px 0px;
     }
     
     .timeline-entry.active .timeline-year {
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 600;
     }
     
     .timeline-entry.active .job-title {
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 600;
     }
     
     .timeline-entry.active .company-name {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 600;
         min-width: unset;
     }
