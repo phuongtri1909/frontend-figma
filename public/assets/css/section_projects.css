@@ -1,36 +1,305 @@
-#projects .bg-projects {
-    background-color: #D4E9FF;
-    gap: 40px;
-    padding-top: 60px;
-    padding-right: 50px;
-    padding-bottom: 60px;
-    padding-left: 50px;
-    border-radius: 16px;
+/* Main container */
+.main-container {
+    background: #D4E9FF;
+    max-width: 100%;
 }
 
-#projects .bg-projects .span-project {
-    font-weight: 400;
+/* Typography */
+.check-out-my {
+    color: #212121;
     font-size: 24px;
-    line-height: 120%;
-    letter-spacing: 0%;
-    color: #212121;
-}
-
-#projects .bg-projects .title {
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 120%;
-    letter-spacing: 0%;
-    color: #212121;
-}
-
-#projects .bg-projects .des {
-    max-width: 500px;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: -3%;
+    line-height: 1.2;
+}
+
+.featured-projects {
+    color: #212121;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .featured-projects {
+        font-size: 36px;
+    }
+}
+
+.brand-vision-strategies {
     text-align: right;
-    vertical-align: middle;
+    color: #3c3c3c;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+}
+
+@media (max-width: 768px) {
+    .brand-vision-strategies {
+
+        margin-top: 1rem;
+        font-size: 16px;
+    }
+}
+
+/* Project cards */
+.project-title {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.project-subtitle {
+    color: #f7f7f7;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/* Card backgrounds */
+.card-gunplan {
+    background: #9256F2;
+}
+
+.card-sequel-mini {
+    background: #2B2B31;
+}
+
+.card-ellis-ai {
+    background: #34544A;
+}
+
+.card-note-taking {
+    background: #2730E6;
+}
+
+.card-note-taking-10 {
+    background: #909090;
+}
+
+.card-um-interactive {
+    background: #6EA9D2;
+}
+
+/* Card hover effects */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    /* Less opaque overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Make overlay visible and enable pointer events on hover */
+.card-gunplan:hover .card-overlay,
+.card-sequel-mini:hover .card-overlay,
+.card-ellis-ai:hover .card-overlay,
+.card-note-taking:hover .card-overlay,
+.card-note-taking-10:hover .card-overlay,
+.card-um-interactive:hover .card-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Style and animate the button */
+.card-overlay .btn {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Show and position the button on hover */
+.card-gunplan:hover .card-overlay .btn,
+.card-sequel-mini:hover .card-overlay .btn,
+.card-ellis-ai:hover .card-overlay .btn,
+.card-note-taking:hover .card-overlay .btn,
+.card-note-taking-10:hover .card-overlay .btn,
+.card-um-interactive:hover .card-overlay .btn {
+    opacity: 1;
+}
+
+/* Images */
+.image,
+.image-5,
+.image-9,
+.image-c,
+.image-11,
+.image-15 {
+    position: relative;
+    height: 323px;
+    overflow: hidden;
+}
+
+.image-3,
+.image-6,
+.image-a,
+.image-d,
+.image-13,
+.image-16 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s ease;
+}
+
+.image-3 {
+    background-image: url(../images/project1.png);
+}
+
+.image-6 {
+    background-image: url(../images/project2.png);
+}
+
+.image-a {
+    background-image: url(../images/project3.png);
+}
+
+.image-d {
+    background-image: url(../images/project4.png);
+}
+
+.image-13 {
+    background-image: url(../images/project5.png);
+}
+
+.image-16 {
+    background-image: url(../images/project6.png);
+}
+
+/* Apply blur filter on hover */
+.card-gunplan:hover .image-3,
+.card-sequel-mini:hover .image-6,
+.card-ellis-ai:hover .image-a,
+.card-note-taking:hover .image-d,
+.card-note-taking-10:hover .image-13,
+.card-um-interactive:hover .image-16 {
+    filter: blur(4px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+
+    .image,
+    .image-5,
+    .image-9,
+    .image-c,
+    .image-11,
+    .image-15 {
+        height: 200px;
+    }
+
+    .project-title {
+        font-size: 22px;
+    }
+
+    .project-subtitle {
+        font-size: 14px;
+    }
+}
+
+/* Mobile optimizations for the overlay */
+@media (max-width: 576px) {
+    .card-overlay .btn-view {
+        font-size: 14px;
+        padding: 0.375rem 1rem !important;
+        width: 125px;
+        height: 40px;
+    }
+
+    
+    .card-overlay {
+        opacity: 0.1;
+    }
+
+    .card-gunplan:active .card-overlay,
+    .card-sequel-mini:active .card-overlay,
+    .card-ellis-ai:active .card-overlay,
+    .card-note-taking:active .card-overlay,
+    .card-note-taking-10:active .card-overlay,
+    .card-um-interactive:active .card-overlay {
+        opacity: 1;
+    }
+}
+
+.btn-view-more {
+    width: 213px;
+    height: 56px;
+    border-width: 3px;
+    border-color: #D0D5DD;
+    font-weight: 600;
     color: #3C3C3C;
+    line-height: 32px;
+    font-size: 18px;
+}
+
+.btn-view-more:hover {
+    background: #ebedf1;
+    border-color: #D0D5DD;
+}
+
+.btn-view {
+    width: 257px;
+    height: 85px;
+    gap: 8px;
+    border-radius: 1714.55px;
+    border-width: 1.72px;
+   
+    background-color: #000000;
+    border-color: #DADADA;
+
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: -3%;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+.btn-view:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-color: #DADADA;
+    box-shadow: 0px 0px 8px 9px rgb(255 255 255 / 15%);
+}
+
+/* Transition for expanding/collapsing projects */
+#additional-projects {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#additional-projects.d-none {
+    display: none !important;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+#additional-projects:not(.d-none) {
+    display: flex !important;
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
