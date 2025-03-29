@@ -162,3 +162,81 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   })
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    const theFirstSection = document.getElementById('the-first');
+    const floatingBox = document.querySelector('.floating-box');
+    
+    // Only set up the effect if both elements exist
+    if (theFirstSection && floatingBox) {
+        
+        // Show floating box when mouse enters the section
+        theFirstSection.addEventListener('mouseenter', function() {
+            floatingBox.style.opacity = '1';
+        });
+        
+        // Hide floating box when mouse leaves the section
+        theFirstSection.addEventListener('mouseleave', function() {
+            floatingBox.style.opacity = '0';
+        });
+        
+        // Update floating box position when mouse moves
+        theFirstSection.addEventListener('mousemove', function(e) {
+            // Calculate position with small delay for smooth effect
+            const x = e.clientX;
+            const y = e.clientY;
+            
+            // Apply position with slight delay for smoother movement
+            requestAnimationFrame(function() {
+                floatingBox.style.left = x + 'px';
+                floatingBox.style.top = y + 'px';
+            });
+        });
+    }
+    
+    // Hide floating box initially for mobile devices
+    if (window.innerWidth < 768) {
+        if (floatingBox) {
+            floatingBox.style.display = 'none';
+        }
+    }
+
+    // Add subtle movement animation
+    let lastX = 0;
+    let lastY = 0;
+    let isMoving = false;
+
+    theFirstSection.addEventListener('mousemove', function(e) {
+        isMoving = true;
+        
+        // Calculate position
+        const x = e.clientX;
+        const y = e.clientY;
+        
+        // Calculate movement speed
+        const speedX = Math.abs(x - lastX);
+        const speedY = Math.abs(y - lastY);
+        const speed = Math.min(Math.max(speedX, speedY) * 0.05, 1); // Limit the effect
+        
+        // Apply rotation based on movement direction and speed
+        const rotateX = (y - lastY) * speed;
+        const rotateY = (x - lastX) * -speed;
+        
+        // Apply transformations
+        requestAnimationFrame(function() {
+            floatingBox.style.left = x + 'px';
+            floatingBox.style.top = y + 'px';
+            floatingBox.style.transform = `translate(-50%, -50%) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+        
+        lastX = x;
+        lastY = y;
+        
+        // Reset isMoving after delay
+        clearTimeout(movingTimeout);
+        const movingTimeout = setTimeout(() => {
+            isMoving = false;
+            floatingBox.style.transform = 'translate(-50%, -50%) rotateX(0deg) rotateY(0deg)';
+        }, 100);
+    });
+});
