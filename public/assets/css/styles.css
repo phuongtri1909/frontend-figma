@@ -35,6 +35,30 @@ body {
     margin-top: 7rem;
 }
 
+.mb-50{
+    margin-bottom: 50rem;
+}
+
+.mb-30{
+    margin-bottom: 30rem;
+}
+
+.mb-20{
+    margin-bottom: 20rem;
+}
+
+.mb-15{
+    margin-bottom: 15rem;
+}
+
+.mb-10{
+    margin-bottom: 10rem;
+}
+
+.mb-7{
+    margin-bottom: 7rem;
+}
+
 .pt-15{
     padding-top: 15rem;
 }
@@ -845,4 +869,148 @@ body.menu-open {
     letter-spacing: 0%;
     text-align: center;
 
+}
+
+/* next and previous page*/
+
+/* Next Project Button Styles */
+.next-project {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.next-btn-circle {
+    height: 42px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.next-btn-circle:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.next-btn-circle i {
+    margin-left: 12px;
+    font-size: 14px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.next-text-1 {
+    color: #707070;
+    transition: color 0.3s ease;
+}
+
+.next-text {
+    font-weight: 500;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.next-project:hover .next-btn-circle:before {
+    width: 100%;
+    border-radius: 21px;
+    background-color: #000; 
+    border-color: #000;
+}
+
+/* Change text color on hover */
+.next-project:hover .next-btn-circle i,
+.next-project:hover .next-text {
+    color: white !important;
+}
+
+.next-project:hover .next-text-1 {
+    color: #7e7e7e !important;
+}
+
+/* Active state on click */
+.next-project:active .next-btn-circle:before {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Optional hover effect */
+.next-project:hover {
+    transform: translateX(5px);
+}
+
+/* Previous Project Button Styles */
+.prev-project {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.prev-btn-circle {
+    height: 42px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.prev-btn-circle:before {
+    content: "";
+    position: absolute;
+    left: 0; /* Position circle on left side */
+    top: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.prev-btn-circle i {
+    margin-left: 12px;
+    font-size: 14px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.prev-text-1 {
+    color: #707070;
+    transition: color 0.3s ease;
+}
+
+.prev-text {
+    font-weight: 500;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.prev-project:hover .prev-btn-circle:before {
+    width: 100%;
+    border-radius: 21px;
+    background-color: #000; 
+    border-color: #000;
+}
+
+/* Change text color on hover */
+.prev-project:hover .prev-btn-circle i,
+.prev-project:hover .prev-text {
+    color: white !important;
+}
+
+.prev-project:hover .prev-text-1 {
+    color: #7e7e7e !important;
+}
+
+/* Active state on click */
+.prev-project:active .prev-btn-circle:before {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Optional hover effect */
+.prev-project:hover {
+    transform: translateX(-5px);  /* Move left instead of right */
 }
