@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UM Interactive Media Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Oxanium:wght@400;500;600&family=Red+Hat+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="public/assets/css/styles.css">
+    <link rel="stylesheet" href="public/assets/css/gunplan.css">
+    <link rel="stylesheet" href="public/assets/css/section_the_first.css">
+    <link rel="stylesheet" href="public/assets/css/defining-survey-goals.css">
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar position-relative">
+            <a href="index.html" class="logo-container" style="z-index: 1001;">
+                <img src="public/assets/images/logo.png" alt="" height="35">
+            </a>
+
+            <div class="coords-container position-absolute top-50 start-50 translate-middle d-none d-lg-block">
+                <div class="coords-box">
+                    <div class="coords-text">25.7734° N, 80.1902° W</div>
+                </div>
+            </div>
+
+            <div class="nav-buttons d-md-flex gap-3 ms-auto d-none">
+                <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
+                    <a href="javascript:void(0)" onclick="navigateToProjects()"
+                        class="text-decoration-none btn-circle d-flex align-items-center position-relative">
+                        <i class="fa-solid fa-chevron-right" style="margin-right: 10.4px;"></i>
+                        <span class="first-letter d-inline-block">P</span>
+                        <span class="text-expand d-inline-block pe-2">rojects</span>
+                    </a>
+                </div>
+
+                <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
+                    <a href="public/assets/files/MiaThan_Resume.pdf" target="_blank"
+                        class="text-decoration-none btn-circle d-flex align-items-center position-relative">
+                        <i class="fa-solid fa-chevron-right" style="margin-right: 10.4px;"></i>
+                        <span class="first-letter d-inline-block">R</span>
+                        <span class="text-expand d-inline-block pe-2">esume</span>
+                    </a>
+                </div>
+
+                <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
+                    <a href="mailto:miathan245@gmail.com"
+                        class="text-decoration-none btn-circle d-flex align-items-center position-relative">
+                        <i class="fa-solid fa-chevron-right" style="margin-right: 10px;"></i>
+                        <span class="first-letter d-inline-block">C</span>
+                        <span class="text-expand d-inline-block pe-2">ontact</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mobile-menu-toggle d-block d-md-none">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </div>
+        </nav>
+
+        <div class="mobile-menu-overlay">
+            <div class="video-background">
+                <video autoplay muted loop playsinline>
+                    <source src="public/assets/videos/banner.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-overlay"></div>
+
+            <div class="mobile-menu-container">
+
+                <div class="nav-buttons d-flex flex-column align-items-center">
+                    <div class="nav-button position-relative cursor-pointer d-flex align-items-center mb-5">
+                        <div class="btn-circle d-flex align-items-center position-relative">
+                            <i class="fa-solid fa-chevron-right fa-2xl" style="margin-right: 23px;"></i>
+                            <span class="first-letter d-inline-block">P</span>
+                            <span class="text-expand d-inline-block pe-2">rojects</span>
+                        </div>
+                    </div>
+
+                    <div class="nav-button position-relative cursor-pointer d-flex align-items-center mb-5">
+                        <div class="btn-circle d-flex align-items-center position-relative">
+                            <i class="fa-solid fa-chevron-right fa-2xl" style="margin-right: 23px;"></i>
+                            <span class="first-letter d-inline-block">R</span>
+                            <span class="text-expand d-inline-block pe-2">esume</span>
+                        </div>
+                    </div>
+
+                    <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
+                        <div class="btn-circle d-flex align-items-center position-relative">
+                            <i class="fa-solid fa-chevron-right fa-2xl" style="margin-right: 19px;"></i>
+                            <span class="first-letter d-inline-block">C</span>
+                            <span class="text-expand d-inline-block pe-2">ontact</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-menu-footer">
+                    <div class="d-flex justify-content-center align-items-center socials-icons">
+                        <a href="mailto:miathan245@gmail.com" class="me-4"><img
+                                src="public/assets/svg/telegram_fill.svg" alt="" height="27" width="27"></a>
+                        <a href="http://www.linkedin.com/in/mia-than" target="_blank"><img
+                                src="public/assets/svg/Linkedin--Streamline-Core.svg" alt="" height="27" width="27"></a>
+                    </div>
+
+                    <div class="coords-container">
+                        <div class="coords-box">
+                            <div class="coords-text">25.7734° N, 80.1902° W</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner-gunplan" class="pt-10">
+        <div class="container">
+            <h3 class="h2 des">UX Research through Open Card Sort</h3>
+            <h2 class="h1 title">UM Interactive Media Website</h2>
+            <a href="https://www.canva.com/design/DAGeWg1VUbk/eSMXUtZCnM5JAS4y4Mwlsg/view?utm_content=DAGeWg1VUbk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9056f769ce"
+                class="btn rounded-pill px-4 py-2 btn-view-pro d-flex align-items-center justify-content-center">View
+                presentation
+                <img src="public/assets/svg/ArrowUpRight.svg" alt="" height="22">
+            </a>
+        </div>
+        <div class="mt-5">
+            <img src="public/assets/images/banner-um.png" alt="" class="img-fluid" id="banner-gunplan-img">
+        </div>
+    </section>
+
+    <section id="introduction">
+        <div class="container">
+            <div class="mt-5">
+                <span class="rounded-pill px-2 py-2 px-md-4 py-md-2 border me-0 me-md-2">UX Design</span>
+                <span class="rounded-pill px-2 py-2 px-md-4 py-md-2 border me-0 me-md-2">UI Design</span>
+            </div>
+
+            <h2 class="mt-4 title-intro">Introduction</h2>
+
+            <div class="mt-4">
+                <h3 class="text-32">About this Project</h3>
+
+                <p class="content-intro">Ever struggled to find information on a website? We wanted to ensure UM
+                    Interactive Media’s site is intuitive and user-friendly. Through an online open card sort, we
+                    explored how users naturally categorize and label information, directly informing a more
+                    user-centered site structure. In this case study, I’ll walk through our research process,
+                    highlighting the crucial user insights we gained, and explain the actionable recommendations we
+                    developed to significantly improve usability, ensuring users effortlessly navigate and access the
+                    information they seek.</p>
+
+            </div>
+
+            <div class="mt-4">
+                <h3 class="text-32">Research Goals</h3>
+
+                <p class="content-intro">Taking notes from lectures or meetings is time-consuming. Many struggle to find
+                    specific moments in long recordings. Can AI solve this?</p>
+
+                <ol class="content-intro">
+                    <li>
+                        Understand How Users Organize and Categorize Website Content:
+                        <p class="mb-0">Why it matters: We want to learn how users naturally group and label information
+                            on the UM Interactive Media website to identify patterns in their mental models and improve
+                            navigation.</p>
+                    </li>
+                    <li>
+                        Identify Pain Points in the Current Website Structure:
+                        <p class="mb-0">
+                            Why it matters: Understanding where users struggle to find information will help us pinpoint
+                            areas where the site's information architecture needs improvement.
+                        </p>
+                    </li>
+                    <li>
+                        Discover User Expectations for Website Navigation and Labeling:
+                        <p class="mb-0">Why it matters: We want to determine the terminology and categorization methods
+                            that make the most sense to users, ensuring the website aligns with their expectations and
+                            enhances usability.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview" class="mt-5 container">
+        <div class="rounded-4 " style="background-color: #f6f6f6;">
+            <div class="row px-3 py-5 p-md-5">
+                <div class="col-12 col-lg-4-5">
+                    <p class="content-intro mb-0">
+                        In my role as Lead Designer, I managed both the design process and project timelines, aligning
+                        the website's visual and functional aspects with study findings.
+                    </p>
+
+                    <div class="mt-4">
+                        <div>
+                            <span class="text-24">
+                                Team members
+                            </span>
+                            <p class="text-50 mb-0">3</p>
+                        </div>
+
+                        <div>
+                            <span class="text-24">
+                                Project Length
+                            </span>
+                            <p class="text-50">2 weeks</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3-custom justify-content-center align-items-center d-flex">
+                    <div class="circular-image-container">
+                        <img src="public/assets/images/um.png" alt="" class="rounded-circle img-fluid">
+                        <div class="ripple-circle ripple-1"></div>
+                        <div class="ripple-circle ripple-2"></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4-5 text-end">
+                    <div class="role-container">
+                        <span class="text-24">My role</span>
+                        <p class="text-50">UX/UI Designer</p>
+                        <p class="content-intro mb-0">My contributions extended to UX research, where I conducted
+                            participant interviews. These insights were instrumental in shaping design decisions and
+                            resolving key user pain points, all while adhering to project deadlines and milestones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="previews" class="mt-5 mt-md-10 container">
+        <div class="row row-header">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="heading-preview">
+                    <h3 class="text-32 mb-4 ">Methodology</h3>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9">
+                <img src="public/assets/images/um1.png" alt="" class="img-fluid my-4 rounded-4 d-none d-md-block">
+
+                <img src="public/assets/images/um2.png" alt="" class="img-fluid my-4 rounded-4 d-block d-md-none">
+
+                <span class="content-intro fw-semibold">Introduction & Consent</span>
+                <p class="content-intro">Before each session, participants received a detailed explanation of the
+                    study’s purpose and procedures. Informed consent was obtained, and explicit permission was granted
+                    to record the Zoom sessions for analysis.</p>
+
+                <span class="content-intro fw-semibold">Pre-Sort Questionnaire</span>
+                <p class="content-intro">Participants completed a 10-question demographic survey before the card sorting
+                    exercise. This provided contextual information to analyze potential correlations between participant
+                    backgrounds and sorting behavior.</p>
+
+                <span class="content-intro fw-semibold">Card Sorting Task</span>
+                <p class="content-intro">Participants used OptimalSort to categorize website-related items based on
+                    their intuitive navigation preferences. Moderators encouraged participants to verbalize their
+                    thought processes while minimizing interruptions. During the task, participants were asked to:</p>
+
+                <ul class="list-disc content-intro">
+                    <li>Name each group they created.</li>
+                    <li>Suggest words users would expect to find on the homepage leading to those groups.</li>
+                </ul>
+
+                <span class="content-intro fw-semibold">Post-Sort Activities</span>
+                <p class="content-intro">After completing the sorting exercise, participants:</p>
+
+                <ul class="list-disc content-intro">
+                    <li>Described their sorting strategy</li>
+                    <li>Explored the UM Interactive Media website for five minutes.</li>
+                    <li>Completed a post-sort questionnaire to provide additional insights into their experience.</li>
+                </ul>
+
+                <span class="content-intro fw-semibold">Data Collection & Analysis</span>
+                <ul class="list-disc content-intro">
+                    <li>Category labels and group formations were recorded from OptimalSort.</li>
+                    <li>Zoom session recordings were analyzed for qualitative insights.</li>
+                    <li>Distance matrices were created for individual and combined participant data.</li>
+                    <li>
+                        Tree diagrams were generated to visualize category relationships.
+                    </li>
+                    <li>
+                        Participant comments were documented to identify common themes.
+                    </li>
+                    <li>
+                        Findings were used to refine the website’s information architecture.
+                    </li>
+                </ul>
+
+                <span class="content-intro fw-semibold">Test Environment & Moderator Role</span>
+                <p class="content-intro">All sessions were conducted remotely using Zoom and OptimalSort. Participants
+                    and moderators used personal computers with internet access. Each moderator facilitated four
+                    sessions, ensured the study was conducted properly, and documented participant insights.</p>
+
+
+            </div>
+        </div>
+
+        <div class="row mt-5 row-header">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="heading-preview">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRTiqWEwvuIfUHWC6wG2HvOfc3UbNwZhH0YBW5MlZaa8AiAA/viewform"
+                        class="btn-view-page rounded-pill text-decoration-none" target="_blank">
+                        View Questionaire
+                        <img src="public/assets/svg/ArrowUpRight.svg" alt="" height="22">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9">
+
+                <p class="content-intro">Our pre-sort questionnaire helped us understand our participants' backgrounds,
+                    ensuring we captured a range of perspectives to inform our findings. We collected basic demographic
+                    details such as age, gender, and ethnicity to identify potential patterns in how different users
+                    organize information. Additionally, we gathered insights into their familiarity with technology and
+                    UM Interactive Media website to assess how their experience level might influence their sorting
+                    decisions. These responses provided valuable context for analyzing the card sort results, allowing
+                    us to draw deeper conclusions about user navigation preferences for the UM Interactive Media
+                    website.</p>
+
+
+                <img src="public/assets/images/um3.png" alt="" class="img-fluid my-4 rounded-4 d-none d-md-block">
+
+                <img src="public/assets/images/um4.png" alt="" class="img-fluid my-4 rounded-4 d-block d-md-none">
+
+                <div class="d-none d-md-block">
+
+                    <span class="content-intro fw-semibold">Sampling Method: </span>
+                    <p class="content-intro">Participants were recruited using convenience sampling, allowing us to
+                        efficiently gather a diverse range of perspectives and initial insights into user needs and
+                        preferences. However, future research with a larger and more representative sample will be
+                        necessary to validate these findings.</p>
+
+                    <span class="content-intro fw-semibold">Participants:</span>
+                    <p class="content-intro">We interviewed 12 participants, all existing or prospective college
+                        students over the age of 18. While the sample size was relatively small, it provided a valuable
+                        foundation for identifying key themes and informing the design of the UM Interactive Media
+                        website.</p>
+                    <img src="public/assets/images/um5.png" alt="" class="img-fluid rounded-4">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 row-header">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="heading-preview">
+                    <h3 class="text-32 mb-4 ">Card Sort Analysis</h3>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9">
+
+                <img src="public/assets/images/um6.png" alt="" class="img-fluid my-4 rounded-4 d-none d-md-block">
+
+                <img src="public/assets/images/um7.png" alt="" class="img-fluid my-4 rounded-4 d-block d-md-none">
+
+                <p class="content-intro">Our research revealed that participants were generally unlikely to recommend
+                    the current UM Interactive Media website, reflected in a Net Promoter Score (NPS) of -33.</p>
+            </div>
+        </div>
+
+
+        <div class="row mt-5 row-header">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="heading-preview">
+                    <h3 class="text-32 mb-4 ">Best Merge Method Dendogram</h3>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9">
+                <p class="content-intro">We considered a 40% agreement level as the threshold for identifying meaningful
+                    groupings. At this level, four distinct groups emerged, indicating that participants primarily
+                    organized content by function rather than audience:</p>
+
+                <ul class="list-disc content-intro">
+                    <li>Events and Sharing Spaces Information (yellow cluster) — This cluster shows strong agreement
+                        among participants, indicating that content related to events and shared spaces was naturally
+                        associated.</li>
+                    <li>Application and FAQ (orange cluster) — The strong grouping at a low branch reflects that
+                        participants consistently connected application-related information and frequently asked
+                        questions.</li>
+                    <li>Faculty/Accomplishments (blue cluster) — While less tightly grouped than the previous two, this
+                        cluster indicates a moderate consensus around content related to faculty profiles and student
+                        awards.</li>
+                    <li>Career and Alumni Services (pink cluster) — Although this cluster formed at a higher branch,
+                        suggesting a weaker consensus, it still reflects a logical grouping based on career and
+                        alumni-related content.</li>
+                </ul>
+
+                <img src="public/assets/images/um8.png" alt="" class="img-fluid my-4 rounded-4 ">
+            </div>
+        </div>
+
+        <div class="row mt-5 row-header">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="heading-preview">
+                    <h3 class="text-32 mb-4 ">Similar Matrix</h3>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9">
+                <p class="content-intro">Our analysis of the similarity matrix highlighted consistent patterns in how
+                    participants associated content:</p>
+                <ul class="list-disc content-intro">
+                    <li>
+                        Career-Related Groupings:
+                        <p class="mb-0"> Items like "Career services and internships for students" and "Posting jobs for
+                            students of the program" showed a high similarity score, indicating that participants
+                            consistently associated career services and job-related content as part of the same
+                            category.</p>
+                    </li>
+                    <li>
+                        Application-Related Groupings:
+                        <p class="mb-0">Application requirements for international students" and "Information for
+                            international students applying to the program" were frequently paired, reflecting a strong
+                            user expectation that information related to international applications should be grouped
+                            together.</p>
+                    </li>
+                    <li>
+                        Campus and Facility Information:
+                        <p class="mb-0">"Description of Meeting Spaces" and "Information about the building where
+                            classes are taught" had a high similarity score, suggesting that participants expected
+                            information about facilities and campus logistics to be presented together.</p>
+                    </li>
+                </ul>
+
+                <img src="public/assets/images/um9.png" alt="" class="img-fluid my-4 rounded-4 ">
+
+            </div>
+        </div>
+
+        <div class="row mt-5 row-header">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="heading-preview">
+                    <h3 class="text-32 mb-4 ">3D Clusters</h3>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9">
+                <p class="content-intro">Our analysis revealed six clear content clusters, reflecting user expectations:
+                </p>
+                <ul class="list-disc content-intro">
+                    <li>
+                        External Career Source – Users linked "How to hire our students" and "Information for companies
+                        and organizations that partner with the program," indicating the need for a separate section for
+                        external partners.
+                    </li>
+                    <li>
+                        Career Resources for Students/Alumni – Items like "Career services and internships for students"
+                        and "Posting jobs for students" were consistently grouped, suggesting a dedicated section for
+                        student career resources.
+                    </li>
+                    <li>
+                        Overview of the Program – Strong connections between "Overview of the program", "Required
+                        courses", and "Program concentrations" highlight the need for a clear program overview section.
+                    </li>
+                    <li>
+                        Admission & Application – Clustering of "Online application," "Application requirements," and
+                        "Program tuition" supports consolidating all admission-related content.
+                    </li>
+                    <li>
+                        Research Spaces – Items like "Description of research facilities" and "Meeting spaces" were
+                        grouped together, suggesting users expect facility details to be unified.
+                    </li>
+                    <li>
+                        Newsletter & Social Media – Grouping of "Newsletter sign-up" and "How to follow the program"
+                        reflects the need to centralize communication resources.
+                    </li>
+                </ul>
+
+                <img src="public/assets/images/um10.png" alt="" class="img-fluid my-4 rounded-4 ">
+
+            </div>
+        </div>
+
+        <div class="row mt-5 row-header">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="heading-preview">
+                    <h3 class="text-32 mb-4 ">Analysis</h3>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9">
+                <p class="content-intro">The findings from our card sorting exercise provided valuable insights that
+                    directly influenced our design recommendations. Due to project limitations, we were unable to
+                    develop a fully interactive website. However, leveraging the analysis, we were able to identify key
+                    secondary navigation patterns and make informed recommendations for a future build.
+                </p>
+                <ul class="list-disc content-intro">
+                    <li>
+                        Prioritize Career: Maintain prominent "Career" section based on user importance.
+                    </li>
+                    <li>
+                        Enhance Admissions: Continue dedicated "Admissions" with detailed info, especially for international students (Miami relevance).
+                    </li>
+                    <li>
+                        Clarify Research/Facilities: Standardize terminology, group research under "Research" for better navigation.
+                    </li>
+                    <li>
+                        Maintain FAQs: Keep separate FAQs for Career and Admissions for easy access.
+                    </li>
+                    <li>
+                        Support Communication: Retain "Newsletter" and social media links for engagement.
+                    </li>
+                    <li>
+                        Organize Programs: Keep the current clear program breakdown.
+                    </li>
+                    <li>
+                        Expand Student Life: Develop a comprehensive "Student On-Campus Life" page.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="row mt-5 row-header">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="heading-preview">
+                    <h3 class="text-32 mb-4 ">Secondary Navigation</h3>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9">
+                
+                <img src="public/assets/images/um11.png" alt="" class="img-fluid mt-4 rounded-4 ">
+
+            </div>
+        </div>
+
+        <div class="row mt-5 row-header">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="heading-preview">
+                    <h3 class="text-32 mb-4 ">Final Prototype </h3>
+                    <a href="https://www.figma.com/proto/AcyouT9r0TykYkDNRtzbQY/University-of-Miami-Interactive-Website?node-id=1-3&t=PCyj4bYEeef8PQUi-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3"
+                        class="btn-view-page rounded-pill text-decoration-none" target="_blank">
+                        View Prototype
+                        <img src="public/assets/svg/ArrowUpRight.svg" alt="" height="22">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9">
+
+                    <img src="public/assets/images/um12.png" alt="" class="img-fluid rounded-4">
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row mt-5 row-header">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="heading-preview">
+                    <h3 class="text-32 mb-4 ">Reflection</h3>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9">
+
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <div class="d-flex flex-column card rounded-4 bg-f6 p-4 border-0 h-100">
+                            <div class="rounded-pill bg-dark mb-3 p-2 d-flex" style="height: 40px; width: 40px;">
+
+                                <img src="public/assets/svg/eye_line.svg" alt="" height="24" width="24">
+                            </div>
+
+                            <span class="text-20 mb-2">Insights from Card Sorting Study</span>
+                            <p class="text-16 mb-0">
+                                Conducting the study reshaped my approach to UX design by revealing how users naturally structure information. It pushed me to rely on data rather than assumptions.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <div class="d-flex flex-column card rounded-4 bg-f6 p-4 border-0 h-100">
+                            <div class="rounded-pill bg-dark mb-3 p-2 d-flex" style="height: 40px; width: 40px;">
+
+                                <img src="public/assets/svg/head_line.svg" alt="" height="24" width="24">
+                            </div>
+
+                            <span class="text-20 mb-2">Impact on Navigation & Structure</span>
+                            <p class="text-16 mb-0">
+                                Seeing users group related concepts led me to create a "Career & Internships" section, improving navigation and accessibility for career resources.
+
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <div class="d-flex flex-column card rounded-4 bg-f6 p-4 border-0 h-100">
+                            <div class="rounded-pill bg-dark mb-3 p-2 d-flex" style="height: 40px; width: 40px;">
+
+                                <img src="public/assets/svg/flag_1_line.svg" alt="" height="24" width="24">
+                            </div>
+
+                            <span class="text-20 mb-2">Key Takeaways on Mental Models</span>
+                            <p class="text-16 mb-0">
+                                This experience reinforced the need to design in line with users’ mental models, ensuring information is presented intuitively for better usability and satisfaction.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-7 mb-7 d-flex justify-content-between">
+            <a href="note-taking-with-ai-audio.html"
+                class="prev-project position-relative d-flex align-items-center text-decoration-none">
+                <div class="prev-btn-circle d-flex align-items-center position-relative">
+                    <i class="fa-solid fa-chevron-left" style="margin-right: 10px;"></i>
+                    <span class="prev-text-1 d-inline-block">P</span>
+                    <span class="prev-text-1 d-inline-block pe-2">rev</span>
+                    <span class="prev-text pe-2">Note taking with AI & Audio</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="the-first" class="position-relative py-5">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="public/assets/videos/bannerft.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="floating-box">
+            <span class="floating-text-inner">Say hi</span>
+            <span class="corner top-left"></span>
+            <span class="corner top-right"></span>
+            <span class="corner bottom-left"></span>
+            <span class="corner bottom-right"></span>
+        </div>
+
+        <div class="container position-relative">
+            <div class="banner-wrapper-the-first d-flex flex-column justify-content-center w-100 min-vh-50 py-5">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h3 class="display-4 mb-4 text-title-first">The first word opens the door to endless
+                            possibilities.</h3>
+                        <p class="lead mb-5 text-des">Ready to create something amazing together?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container" id="footer">
+        <div class="d-flex justify-content-center align-items-center flex-column flex-md-row pt-5">
+            <a href="index.html" class="logo-container" style="z-index: 1001;">
+                <img src="public/assets/images/logo.png" alt="" height="35">
+            </a>
+
+            <div class="nav-buttons d-flex gap-3 ms-0 ms-md-auto mt-md-2 pt-3">
+                <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
+                    <a href="javascript:void(0)" onclick="navigateToProjects()"
+                        class="text-decoration-none btn-circle d-flex align-items-center position-relative">
+                        <i class="fa-solid fa-chevron-right" style="margin-right: 10.4px;"></i>
+                        <span class="first-letter d-inline-block">P</span>
+                        <span class="text-expand d-inline-block pe-2">rojects</span>
+                    </a>
+                </div>
+
+                <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
+                    <a href="public/assets/files/MiaThan_Resume.pdf" target="_blank"
+                        class="text-decoration-none btn-circle d-flex align-items-center position-relative">
+                        <i class="fa-solid fa-chevron-right" style="margin-right: 10.4px;"></i>
+                        <span class="first-letter d-inline-block">R</span>
+                        <span class="text-expand d-inline-block pe-2">esume</span>
+                    </a>
+                </div>
+
+                <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
+                    <a href="mailto:miathan245@gmail.com"
+                        class="text-decoration-none btn-circle d-flex align-items-center position-relative">
+                        <i class="fa-solid fa-chevron-right" style="margin-right: 10px;"></i>
+                        <span class="first-letter d-inline-block">C</span>
+                        <span class="text-expand d-inline-block pe-2">ontact</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between flex-column flex-md-row align-items-center py-4">
+            <span class="t-ft">© 2025 Mia Than. All Rights Reserved.</span>
+            <a class="t-ft" href="http://www.linkedin.com/in/mia-than">Connect with my Linkedin</a>
+        </div>
+    </footer>
+
+    <script src="public/assets/js/script.js"></script>
+</body>
+
+</html>
