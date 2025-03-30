@@ -1,0 +1,146 @@
+/* defining-survey-goals */
+.text-44 {
+    position: relative;
+    color: #212121;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 52.8px;
+    text-align: left;
+}
+
+.text-number {
+    position: relative;
+    color: #212121;
+    font-size: 450px;
+    font-weight: 400;
+    line-height: 337.5px;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.text-des-number {
+    align-items: center;
+    align-self: stretch;
+    position: relative;
+    color: #3c3c3c;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: -0.66px;
+}
+
+.feature-section-web {
+    background: #f6f6f6;
+    padding: 60px 0px;
+    height: 265px;
+    overflow: hidden;
+}
+
+.feature-section-web-2{
+    background: #f6f6f6;
+    padding: 40px 0px;
+    height: 265px;
+    overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+    .text-44 {
+        font-size: 36px;
+        line-height: 120%;
+    }
+
+    .text-number {
+        font-size: 400px;
+    }
+
+    .text-des-number {
+        font-size: 20px;
+    }
+
+    .feature-section-web {
+        padding: 24px;
+    }
+
+    .feature-section-web-2 {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 992px) {
+    .text-44 {
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    .text-number {
+        font-size: 300px;
+    }
+
+    .text-des-number {
+        font-size: 16px;
+    }
+
+    .feature-section-web {
+        height: 335px;
+        padding: 24px;
+    }
+
+    .feature-section-web-2 {
+        height: 470px;
+        padding: 24px;
+    }
+}
+
+/*  */
+
+.custom-card {
+    background: #F8F9FA;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.custom-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #E0E0E0;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    clip-path: ellipse(55% 100% at center top);
+}
+.circle {
+    width: 70px;
+    height: 70px;
+    background: black;
+    color: white;
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    margin-top: 24px;
+    z-index: 1;
+    font-family: "Red Hat Display";
+}
+
+.text-20-1{
+    color: #3C3C3C;
+    font-family: "Albert Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+}

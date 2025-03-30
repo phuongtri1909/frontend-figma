@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GUNPLAN Tutorial App</title>
+    <title>Ellis AI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Oxanium:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Oxanium:wght@400;500;600&family=Red+Hat+Display:wght@400;500;600&display=swap"
         rel="stylesheet">
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="public/assets/css/styles.css">
     <link rel="stylesheet" href="public/assets/css/gunplan.css">
     <link rel="stylesheet" href="public/assets/css/section_the_first.css">
+    <link rel="stylesheet" href="public/assets/css/defining-survey-goals.css">
 </head>
 
 <body>
     <header class="container">
         <nav class="navbar position-relative">
-            <div class="logo-container" style="z-index: 1001;">
+            <a href="index.html" class="logo-container" style="z-index: 1001;">
                 <img src="public/assets/images/logo.png" alt="" height="35">
-            </div>
+            </a>
 
             <div class="coords-container position-absolute top-50 start-50 translate-middle d-none d-lg-block">
                 <div class="coords-box">
@@ -31,27 +32,27 @@
 
             <div class="nav-buttons d-md-flex gap-3 ms-auto d-none">
                 <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
-                    <div class="btn-circle d-flex align-items-center position-relative">
+                    <a href="javascript:void(0)" onclick="navigateToProjects()" class="text-decoration-none btn-circle d-flex align-items-center position-relative">
                         <i class="fa-solid fa-chevron-right" style="margin-right: 10.4px;"></i>
                         <span class="first-letter d-inline-block">P</span>
                         <span class="text-expand d-inline-block pe-2">rojects</span>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
-                    <div class="btn-circle d-flex align-items-center position-relative">
+                    <a href="public/assets/files/MiaThan_Resume.pdf" target="_blank"  class="text-decoration-none btn-circle d-flex align-items-center position-relative">
                         <i class="fa-solid fa-chevron-right" style="margin-right: 10.4px;"></i>
                         <span class="first-letter d-inline-block">R</span>
                         <span class="text-expand d-inline-block pe-2">esume</span>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
-                    <div class="btn-circle d-flex align-items-center position-relative">
+                    <a href="mailto:miathan245@gmail.com" class="text-decoration-none btn-circle d-flex align-items-center position-relative">
                         <i class="fa-solid fa-chevron-right" style="margin-right: 10px;"></i>
                         <span class="first-letter d-inline-block">C</span>
                         <span class="text-expand d-inline-block pe-2">ontact</span>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -98,10 +99,10 @@
 
                 <div class="mobile-menu-footer">
                     <div class="d-flex justify-content-center align-items-center socials-icons">
-                        <span class="me-4"><img src="public/assets/svg/telegram_fill.svg" alt="" height="27"
-                                width="27"></span>
-                        <span><img src="public/assets/svg/Linkedin--Streamline-Core.svg" alt="" height="27"
-                                width="27"></span>
+                        <a href="mailto:miathan245@gmail.com" class="me-4"><img
+                                src="public/assets/svg/telegram_fill.svg" alt="" height="27" width="27"></a>
+                        <a href="http://www.linkedin.com/in/mia-than" target="_blank"><img
+                                src="public/assets/svg/Linkedin--Streamline-Core.svg" alt="" height="27" width="27"></a>
                     </div>
 
                     <div class="coords-container">
@@ -142,20 +143,54 @@
             <div class="mt-4">
                 <h3 class="text-32">About this Project</h3>
 
-                <p class="content-intro">This project explores how freely available AI tools can streamline the process of turning an idea into a final UX/UI design within a three-day timeframe. Imagine trying to apply for a visa, only to be met with legal jargon, outdated websites, and confusing requiremnts. Where do you turn for clear, accurate guidance? Ellis AI was designed to be that trusted assistant—providing immigrants, law firms, and employers with real-time, reliable legal support.</p>
+                <p class="content-intro">This project explores how freely available AI tools can streamline the process
+                    of turning an idea into a final UX/UI design within a three-day timeframe. Imagine trying to apply
+                    for a visa, only to be met with legal jargon, outdated websites, and confusing requiremnts. Where do
+                    you turn for clear, accurate guidance? Ellis AI was designed to be that trusted assistant—providing
+                    immigrants, law firms, and employers with real-time, reliable legal support.</p>
             </div>
 
             <div class="mt-4">
                 <h3 class="text-32">Creativity Unleashed via Ideanote.io</h3>
 
-                <p class="content-intro">After reviewing the company’s mission, I utilized Ideanote, a collaborative innovation management tool that enables users to submit, discuss, and prioritize ideas for a wide range of projects, initiatives, and improvements within an organization. Through this platform, I arrived at a solution: an advanced AI system. This AI system harnesses natural language processing and machine learning to provide real-time guidance and support to immigrants, addressing their queries, offering personalized advice, and streamlining the completion of forms and documents, all with the aim of simplifying the immigration process.</p>
+                <p class="content-intro">After reviewing the company’s mission, I utilized Ideanote, a collaborative
+                    innovation management tool that enables users to submit, discuss, and prioritize ideas for a wide
+                    range of projects, initiatives, and improvements within an organization. Through this platform, I
+                    arrived at a solution: an advanced AI system. This AI system harnesses natural language processing
+                    and machine learning to provide real-time guidance and support to immigrants, addressing their
+                    queries, offering personalized advice, and streamlining the completion of forms and documents, all
+                    with the aim of simplifying the immigration process.</p>
             </div>
         </div>
     </section>
 
     <section id="card-des" class="mt-5 container">
-        <div class="rounded-4 p-4" style="background-color: #f6f6f6;">
-           
+        <div class="position-relative card-stack-container">
+            <!-- Card lớn nhất (trên cùng) -->
+            <div class="card-main position-relative rounded-4 p-4 p-md-5" style="background-color: #f6f6f6;">
+                <p class="text-28">“An advanced artificial intelligence system that uses natural language processing and
+                    machine learning algorithms to provide real-time assistance and guidance to immigrants throughout
+                    the entire immigration process. The AI assistant can answer questions, provide personalized advice,
+                    and even help with form filling and document preparation, making the immigration process more
+                    efficient and accessible for all.”</p>
+                <div class="d-flex align-items-center mt-4">
+                    <img src="public/assets/images/avt.jpg" alt="avt" class="rounded-circle me-3 avt-card">
+                    <div class="d-flex flex-column justify-content-center border-start border-1 border-dark ps-3">
+                        <span class="text-32">Mia Than</span>
+                        <span class="text-24" style="color: #3c3c3c;">Product Manager</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card thứ hai (ở giữa) -->
+            <div class="card-middle rounded-4 p-3 p-md-4">
+
+            </div>
+
+            <!-- Card nhỏ nhất (ở dưới cùng) -->
+            <div class="card-small rounded-4 p-2 p-md-3">
+
+            </div>
         </div>
     </section>
 
@@ -163,34 +198,95 @@
         <div class="row row-header">
             <div class="col-12 col-md-4 col-lg-3">
                 <div class="heading-preview">
-                    <h3 class="text-32 mb-4 ">Concept Map</h3>
+                    <h3 class="text-32 mb-4 ">Defining survey goals with ChatGPT</h3>
                 </div>
             </div>
 
             <div class="col-12 col-md-8 col-lg-9">
-                <p class="content-intro">We designed three core features to enhance bodycam footage management: a searchable folder page, user functions for viewing and uploading media to individual cases, and acentral hub for monitoring updates on processed footage.</p>
-                <p class="content-intro">To visualize these requirements, we initiated the creation of our concept map. As we envision Sequelmini, our dedication is to craft a user-friendly and well-structured application tailored to the unique needs of law enforcement. Our primary objective is to enhance accountability and provide an invaluable tool for the swift management and distribution of information.</p>
-                <img src="public/assets/images/sequel1.jpg" alt="" class="img-fluid mt-4">
+                <p class="content-intro">In an effort to expedite my research process, I’ve provided the following
+                    prompt to ChatGPT: ‘As a UX researcher, I aim to establish three survey scopes for an AI Immigration
+                    Chatbox project. Additionally, please provide three goals that should be addressed in my survey.</p>
+
+                <div class="main-container defining-survey-goals">
+                    <div class="feature-section-web rounded-4 mb-4">
+                        <div class="row">
+                            <div class="col-5"><span class="text-number ps-0 p-lg-5">1</span></div>
+                            <div class="col-7">
+                                <div class="pe-0 pe-lg-4">
+                                    <div class="mb-7 mb-lg-3">
+                                        <span class="text-44">Usability and User Satisfaction</span>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="text-des-number">Goal: Assess the usability of the AI Immigration
+                                            Chatbox and understand user satisfaction with its features and
+                                            interactions.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-section-web rounded-4 mb-4">
+                        <div class="row">
+                            <div class="col-5"><span class="text-number ps-0 p-lg-5">2</span></div>
+                            <div class="col-7">
+                                <div class="pe-0 pe-lg-4">
+                                    <div class="mb-7 mb-lg-3">
+                                        <span class="text-44">User Trust and Privacy</span>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="text-des-number">Goal: Investigate user perceptions of trust and
+                                            concerns regarding privacy while using the AI Immigration Chatbox.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-section-web rounded-4 mb-4">
+                        <div class="row">
+                            <div class="col-5"><span class="text-number ps-0 p-lg-5">3</span></div>
+                            <div class="col-7">
+                                <div class="pe-0 pe-lg-4">
+                                    <div class="mb-7 mb-lg-3">
+                                        <span class="text-44">Feature Prioritization</span>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="text-des-number">Goal: Determine which additional features or
+                                            improvements users would like to see in the AI Immigration Chatbox.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="row mt-5 row-header">
             <div class="col-12 col-md-4 col-lg-3">
                 <div class="heading-preview">
-                    <h3 class="text-32 mb-4">Task Flows</h3>
+                    <h3 class="text-32 mb-4">Typeform AI for surveys and Copy.ai for
+                        user insights</h3>
                 </div>
             </div>
 
             <div class="col-12 col-md-8 col-lg-9">
 
-                <p class="content-intro">Utilizing task flows helped me in strategically identifying the user tasks to replicate within my prototype. The chart emphasized three pivotal actions: viewing recently processed footage, adding a voice note and media files, and creating a new folder.
+                <p class="content-intro">Leveraging ChatGPT and Typeform AI, I’ve designed a survey with the aim of
+                    gaining deeper insights into user behavior and preferences. This survey will assist in
+                    contextualizing responses across diverse user segments, enabling a more comprehensive understanding
+                    of my target audience’s needs and preferences for an AI immigration assistant chatbox.
                 </p>
 
                 <p class="content-intro">
-                    Utilizing task flows helped me in strategically identifying the user tasks to replicate within my prototype. The chart emphasized three pivotal actions: viewing recently processed footage, adding a voice note and media files, and creating a new folder.
+                    I conducted surveys with 32 participants to gauge user behavior at scale. Three user insights were
+                    generated to support the design thinking process.
                 </p>
 
-                <img src="public/assets/images/sequel2.png" alt="" class="img-fluid mt-4">
+                <img src="public/assets/images/ellis1.png" alt="" class="img-fluid mt-4 d-none d-md-block">
+
+                <img src="public/assets/images/ellis2.png" alt="" class="img-fluid mt-4 d-block d-md-none">
             </div>
         </div>
 
@@ -198,70 +294,121 @@
             <div class="col-12 col-md-4 col-lg-3">
                 <div class="heading-preview">
 
-                    <h3 class="text-32 mb-4 ">Low-Fidelity Wireframes</h3>
-                   
+                    <h3 class="text-32 mb-4 ">User Insight</h3>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="custom-card">
+                            <div class="circle">1</div>
+                            <p class="mt-3 text-20-1 text-start">Integration with official immigration databases is a key priority. The
+                                ability to access real-time policy updates and have accurate information from authorized
+                                sources is valued by users.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="custom-card">
+                            <div class="circle">2</div>
+                            <p class="mt-3 text-20-1 text-start">Clear and simple user interface is highly valued. This suggests that ease of navigation and user-friendliness are important factors for individuals seeking immigration assistance through the chatbox.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="custom-card">
+                            <div class="circle">3</div>
+                            <p class="mt-3 text-20-1 text-start">There is a range of comfort levels when sharing personal information with an AI chatbox. While some were very comfortable, others expressed discomfort or reluctance. This suggests the importance of ensuring data privacy and security measures are in place to build trust and address user concerns about sharing personal information with the chatbox.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 row-header">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="heading-preview">
+                    <h3 class="text-32 mb-4">Brainstorming with Figma AI Plugin</h3>
+
                 </div>
             </div>
 
             <div class="col-12 col-md-8 col-lg-9">
 
-                <p class="content-intro">To initiate our design thinking process, we’ve developed low-fidelity wireframes that encapsulate our vision for Sequelmini: an intuitive, well- structured application tailored for law enforcement. This tool is designed to enhance accountability and serve as an indispensable organizational aid for the efficient dissemination of information in various cases.
-                </p>
+                <p class="content-intro">Utilizing the provided specifications of a “modern and simple AI chatbox” and my guidance for crafting a contemporary and minimalist AI chatbox desktop interface, Wireframe Designer, crafted by the talented Chenmu Wu, has skillfully generated the foundational blueprint necessary to commence the development of Ellis’s landing page.</p>
 
-                <p class="content-intro">“For this project, conducting user testing was not included in our scope. Therefore, we are designing based on our best judgment. Nonetheless, we recognize that the true potential of the project will only be fully realized through testing.</p>
+                <p>This project focuses exclusively on the Chat Assistance feature; the plugin streamlined my ideation process by inspiring me with numerous ideas.</p>
 
-                <img src="public/assets/images/sequel3.png" alt="" class="img-fluid mt-4 border border-2 rounded-4">
+                <img src="public/assets/images/ellis6.png" alt="" class="img-fluid mt-4 rounded-4 border">
+
             </div>
         </div>
+
+        <div class="row mt-5 row-header">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="heading-preview">
+                    <h3 class="text-32 mb-4">Sketch & Mid-Fidelity Visuals</h3>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9">
+
+                <p class="content-intro">This is where human imagination takes center stage. I envision Ellis, an AI Assistant capable of discerning various languages and responding accordingly, all while meticulously deciphering user questions and intent with seamless precision.</p>
+
+                <img src="public/assets/images/ellis7.jpg" alt="" class="img-fluid mt-4 rounded-4 border">
+
+                <p class="content-intro mt-4">Subsequent to creating the initial sketch, I transitioned it into mid-fidelity visuals to enhance clarity.</p>
+
+                <img src="public/assets/images/ellis8.png" alt="" class="img-fluid mt-4 rounded-4">
+
+            </div>
+        </div>
+
 
         <div class="row mt-5 row-header">
             <div class="col-12 col-md-4 col-lg-3">
                 <div class="heading-preview">
                     <h3 class="text-32 mb-4">Final Outcome</h3>
-                   
+
                 </div>
             </div>
 
             <div class="col-12 col-md-8 col-lg-9">
 
-                <p class="content-intro">In a landscape characterized by a multitude of viewpoints and debates regarding bodycams, encompassing their merits, limitations, and ethical implications, SequelMini represents a pioneering response. Our application serves to navigate this intricate terrain by elevating the functionality of body-worn cameras, ultimately fostering more effective, accountable, and responsible law enforcement practices.</p>
+                <p class="content-intro">Allow me to introduce you to Ellis, the extraordinary AI-powered chatbox service that’s set to touch the lives of those seeking immigration assistance in a profound way. With Ellis, you’ll find a pathway to understanding the U.S. immigration process that’s as smooth as a heartfelt conversation. Say goodbye to the days of tirelessly searching Google and grappling with the complexities of USTravelDocs interfaces; Ellis is here to make this journey more humane and meaningful for you.</p>
 
-                <img src="public/assets/images/sequel4.png" alt="" class="img-fluid mt-4 rounded-4">
-                <div class="row mb-4">
-                    <div class="col-12 col-md-6">
-                        <img src="public/assets/images/sequel5.png" alt="" class="img-fluid mt-4 rounded-4">
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <img src="public/assets/images/sequel6.png" alt="" class="img-fluid mt-4 rounded-4">
-                    </div>
+                <img src="public/assets/images/ellis9.png" alt="" class="img-fluid mt-4 rounded-4 border">
+
+
+                <img src="public/assets/images/ellis10.png" alt="" class="img-fluid mt-4 rounded-4">
+
+                <img src="public/assets/images/ellis11.png" alt="" class="img-fluid mt-4 rounded-4">
+
+            </div>
+        </div>
+
+        <div class="row mt-5 row-header">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="heading-preview">
+                    <h3 class="text-32 mb-4">Before & After: The Ellis AI Advantage</h3>
+
                 </div>
+            </div>
 
-                <p class="content-intro">To access the app, users are required to input their security PIN. This ensures confidentiality, a vital necessity for members of law enforcement due to the nature of their profession.</p>
-                <p class="content-intro">
-                    The app enable users to record their notes, which proves particularly valuable for cases with extensive information. This recording feature facilitates the transcription of notes for documentation and paperwork needs.
-                </p>
+            <div class="col-12 col-md-8 col-lg-9">
 
-                <div class="row mb-4">
-                    <div class="col-12 col-md-6">
-                        <img src="public/assets/images/sequel7.png" alt="" class="img-fluid mt-4 rounded-4">
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <img src="public/assets/images/sequel8.png" alt="" class="img-fluid mt-4 rounded-4">
-                    </div>
-                </div>
+                <p class="content-intro">While direct usability testing hasn't been conducted, I anticipate significant value from Ellis AI's core functionalities. By leveraging natural language processing and machine learning, Ellis AI aims to provide personalized guidance, potentially reducing the time and frustration associated with navigating complex immigration requirements. Document translation, powered by AI, intends to streamline the process, eliminating manual effort. </p>
 
-                <p class="content-intro">Ensuring easy accessibility by implementing a scroll for the media upload feature is crucial. This highlights the significance of accompanying media in conveying essential case information.</p>
-                <p class="content-intro">
-                    The app permits users to include customized metatags for their case information. These metatags enhance communication and also improve the searchability of the content.
-                </p>
+                <p class="content-intro"> Furthermore, the delivery of real-time legal updates from verified sources is designed to offer users reliable information, potentially mitigating the anxieties stemming from outdated or untrustworthy sources. In essence, Ellis AI is intended to make the immigration process more efficient, accessible, and stress-free, although the precise impact remains to be validated.</p>
 
-                <p class="content-intro">However, users are not permitted to alter the date, location, or video content generated by the processing department.</p>
-            
-                <img src="public/assets/images/sequel9.png" alt="" class="img-fluid mt-4 rounded-4 mb-4">
+                <img src="public/assets/images/ellis12.png" alt="" class="img-fluid mt-4 rounded-4 d-none d-md-block">
 
-                <p class="content-intro mb-0">Other features encompass a quick case overview, folder view, and user profile display.</p>
 
-                <img src="public/assets/images/sequel10.png" alt="" class="img-fluid mt-4 rounded-4">
+                <img src="public/assets/images/ellis13.png" alt="" class="img-fluid mt-4 rounded-4 d-block d-md-none">
+
             </div>
         </div>
 
@@ -275,7 +422,7 @@
             <div class="col-12 col-md-8 col-lg-9">
 
                 <div class="row g-3">
-                    <div class="col-12 col-md-6 col-xl-4">
+                    <div class="col-12 col-md-6">
 
                         <div class="d-flex flex-column card rounded-4 bg-f6 p-4 border-0 h-100">
                             <div class="rounded-pill bg-dark mb-3 p-2 d-flex" style="height: 40px; width: 40px;">
@@ -283,31 +430,15 @@
                                 <img src="public/assets/svg/eye_line.svg" alt="" height="24" width="24">
                             </div>
 
-                            <span class="text-20 mb-2">Project Overview</span>
+                            <span class="text-20 mb-2">Project Timeline & AI Integration</span>
                             <p class="text-16 mb-0">
-                                This project addresses a major societal issue by fostering trust between law enforcement and the public through seamless design integration into existing procedures.
+                                This project began just three days ago, and AI has drastically improved my workflow. It has accelerated the design process, allowing me to create a high-quality design in a fraction of the usual time.
                             </p>
                         </div>
 
                     </div>
 
-                    <div class="col-12 col-md-6 col-xl-4">
-
-                        <div class="d-flex flex-column card rounded-4 bg-f6 p-4 border-0 h-100">
-                            <div class="rounded-pill bg-dark mb-3 p-2 d-flex" style="height: 40px; width: 40px;">
-
-                                <img src="public/assets/svg/head_line.svg" alt="" height="24" width="24">
-                            </div>
-
-                            <span class="text-20 mb-2">Role & Motivation</span>
-                            <p class="text-16 mb-0">
-                                As a UX/UI Designer, I am driven by the goal of using design for positive impact. This project aligns with my vision of leveraging design to create meaningful societal change.
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="col-12 col-md-6 col-xl-4">
+                    <div class="col-12 col-md-6">
 
                         <div class="d-flex flex-column card rounded-4 bg-f6 p-4 border-0 h-100">
                             <div class="rounded-pill bg-dark mb-3 p-2 d-flex" style="height: 40px; width: 40px;">
@@ -315,35 +446,35 @@
                                 <img src="public/assets/svg/flag_1_line.svg" alt="" height="24" width="24">
                             </div>
 
-                            <span class="text-20 mb-2">Project Goals</span>
+                            <span class="text-20 mb-2">Impact of AI on UX/UI Design</span>
                             <p class="text-16 mb-0">
-                                The goal is to conduct thorough user testing, refine the design based on feedback, and deliver a final product that makes a real impact.
+                                This experience highlights AI’s efficiency in UX/UI design and reinforces my commitment to innovation. Embracing AI is not just about speed—it’s about staying ahead in the ever-evolving design landscape.
                             </p>
                         </div>
 
                     </div>
-
-
                 </div>
             </div>
         </div>
 
         <div class="mt-7 mb-7 d-flex justify-content-between">
-            <a href="gunplan.html" class="prev-project position-relative d-flex align-items-center text-decoration-none">
+            <a href="sequel-mini.html"
+                class="prev-project position-relative d-flex align-items-center text-decoration-none">
                 <div class="prev-btn-circle d-flex align-items-center position-relative">
                     <i class="fa-solid fa-chevron-left" style="margin-right: 10px;"></i>
                     <span class="prev-text-1 d-inline-block">P</span>
                     <span class="prev-text-1 d-inline-block pe-2">rev</span>
-                    <span class="prev-text pe-2">GUNPLAN Tutorial App</span>
+                    <span class="prev-text pe-2">Sequel Mini</span>
                 </div>
             </a>
-            
-            <a href="ellis-ai.html" class="next-project position-relative d-flex align-items-center text-decoration-none">
+
+            <a href="equity-commons-outcomes.html"
+                class="next-project position-relative d-flex align-items-center text-decoration-none">
                 <div class="next-btn-circle d-flex align-items-center position-relative">
                     <i class="fa-solid fa-chevron-right" style="margin-right: 10px;"></i>
                     <span class="next-text-1 d-inline-block">N</span>
                     <span class="next-text-1 d-inline-block pe-2">ext</span>
-                    <span class="next-text pe-2">Ellis AI </span>
+                    <span class="next-text pe-2">Equity Commons Outcomes Page</span>
                 </div>
             </a>
         </div>
@@ -379,39 +510,39 @@
 
     <footer class="container" id="footer">
         <div class="d-flex justify-content-center align-items-center flex-column flex-md-row pt-5">
-            <div class="logo-container" style="z-index: 1001;">
+            <a href="index.html" class="logo-container" style="z-index: 1001;">
                 <img src="public/assets/images/logo.png" alt="" height="35">
-            </div>
+            </a>
 
             <div class="nav-buttons d-flex gap-3 ms-0 ms-md-auto mt-md-2 pt-3">
                 <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
-                    <div class="btn-circle d-flex align-items-center position-relative">
+                    <a href="javascript:void(0)" onclick="navigateToProjects()" class="text-decoration-none btn-circle d-flex align-items-center position-relative">
                         <i class="fa-solid fa-chevron-right" style="margin-right: 10.4px;"></i>
                         <span class="first-letter d-inline-block">P</span>
                         <span class="text-expand d-inline-block pe-2">rojects</span>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
-                    <div class="btn-circle d-flex align-items-center position-relative">
+                    <a href="public/assets/files/MiaThan_Resume.pdf" target="_blank"  class="text-decoration-none btn-circle d-flex align-items-center position-relative">
                         <i class="fa-solid fa-chevron-right" style="margin-right: 10.4px;"></i>
                         <span class="first-letter d-inline-block">R</span>
                         <span class="text-expand d-inline-block pe-2">esume</span>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="nav-button position-relative cursor-pointer d-flex align-items-center">
-                    <div class="btn-circle d-flex align-items-center position-relative">
+                    <a href="mailto:miathan245@gmail.com" class="text-decoration-none btn-circle d-flex align-items-center position-relative">
                         <i class="fa-solid fa-chevron-right" style="margin-right: 10px;"></i>
                         <span class="first-letter d-inline-block">C</span>
                         <span class="text-expand d-inline-block pe-2">ontact</span>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="d-flex justify-content-between flex-column flex-md-row align-items-center py-4">
             <span class="t-ft">© 2025 Mia Than. All Rights Reserved.</span>
-            <a class="t-ft" href="#">Connect with my Linkedin</a>
+            <a class="t-ft" href="http://www.linkedin.com/in/mia-than">Connect with my Linkedin</a>
         </div>
     </footer>
 

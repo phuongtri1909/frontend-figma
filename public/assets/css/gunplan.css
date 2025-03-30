@@ -259,17 +259,23 @@
         font-size: 16px;
         line-height: 32px;
     }
+
+    .text-28 {
+        font-size: 18px !important;
+        line-height: 32px !important;
+    }
 }
 
-.text-28
-{
+.text-28 {
     color: #212121;
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: 38px;
     letter-spacing: -0.56px;
-    }
+}
+
+
 
 .bg-f6 {
     background-color: #F6F6F6;
@@ -280,7 +286,61 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: #fff; /* Đặt nền để tránh bị che */
+    background-color: #fff;
+    /* Đặt nền để tránh bị che */
     padding: 100px 0 0 0;
     transition: all 0.3s ease-in-out;
 }
+
+/* ellis ai */
+
+.avt-card {
+    width: 90px;
+    height: 90px;
+}
+
+@media (max-width: 768px) {
+    .avt-card {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+
+/* Card thứ hai (ở giữa) */
+.card-middle {
+    position: absolute;
+    bottom: -25px;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+    height: 50px;
+    transform: scale(0.95);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #E6E6E6;
+}
+
+/* Card nhỏ nhất (ở dưới cùng) */
+.card-small {
+    position: absolute;
+    bottom: -50px;
+    left: 0%;
+    right: 0%;
+    z-index: -2;
+    height: 50px;
+    transform: scale(0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #D4D4D4;
+}
+
+@media (max-width: 768px) {
+    .card-middle {
+        transform: scale(1);
+    }
+
+    .card-small {
+        transform: scale(1);
+    }
+}
+
+

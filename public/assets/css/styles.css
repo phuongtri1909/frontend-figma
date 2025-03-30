@@ -325,7 +325,7 @@ header {
 
 /* socials-icons */
 
-.socials-icons span{
+.socials-icons a{
     background-color: #fff;
     color: #838383;
     padding: 9.2px;
@@ -333,13 +333,13 @@ header {
     border: 1.15px solid #F2F4F7;
 }
 
-.socials-icons span:hover{
+.socials-icons a:hover{
     background-color: #049BE5;
     color: #fff;
     border: 1.15px solid #049BE5;
 }
 
-.socials-icons span:hover img{
+.socials-icons a:hover img{
    filter: brightness(0) invert(1);
 }
 
@@ -687,16 +687,16 @@ body.menu-open {
     paragraph-spacing: 16px;
 }
 
-.socials-icons-model span{
+.socials-icons-model a{
     background-color: #F2F4F7 !important;
 }
 
-.socials-icons-model span:hover{
+.socials-icons-model a:hover{
     background-color: #049BE5 !important;
     color: #fff !important;
 }
 
-.socials-icons-model span img {
+.socials-icons-model a img {
     filter: invert(40%) sepia(57%) saturate(3532%) hue-rotate(190deg) brightness(101%) contrast(101%);
 }
 
@@ -987,7 +987,6 @@ body.menu-open {
 
 .next-btn-circle {
     height: 42px;
-    white-space: nowrap;
     transition: all 0.3s ease;
     padding: 0;
 }

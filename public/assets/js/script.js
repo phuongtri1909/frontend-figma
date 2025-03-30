@@ -224,3 +224,21 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+// scroll index projects
+function navigateToProjects() {
+    // Check if we're on the index page
+    if (window.location.pathname.endsWith('index.html') || 
+        window.location.pathname.endsWith('/') || 
+        window.location.pathname === '') {
+        
+        // We're on the index page, so smoothly scroll to the projects section
+        const projectsSection = document.getElementById('projects');
+        if (projectsSection) {
+            projectsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    } else {
+        // We're on a different page, redirect to index.html#projects
+        window.location.href = 'index.html#projects';
+    }
+}
