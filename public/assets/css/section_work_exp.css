@@ -15,13 +15,13 @@
 /* Timeline container */
 .timeline-container {
     position: relative;
-    /* Remove height restriction */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Timeline entries container */
 .timeline-entries {
     position: relative;
-    /* Remove height and overflow restrictions */
 }
 
 /* All timeline entries including current */
@@ -50,12 +50,35 @@
     transform: translateY(0);
 }
 
+/* Timeline content layout improvements */
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.timeline-year {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.company-info {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
 .timeline-entry-current .timeline-year {
     font-weight: 600;
     font-size: 36px;
     line-height: 130%;
     letter-spacing: 0%;
-    text-align: center;
     color: #424242; /* Slightly darker than inactive entries */
 }
 
@@ -66,6 +89,7 @@
     letter-spacing: 0%;
     text-align: center;
     color: #424242;
+    margin-bottom: 8px;
 }
 
 .timeline-entry-current .job-des {
@@ -82,9 +106,7 @@
     font-size: 24px;
     line-height: 130%;
     letter-spacing: 0%;
-    text-align: right;
     color: #424242;
-    max-width: 210px;
 }
 
 /* Regular timeline entries */
@@ -93,7 +115,6 @@
     font-size: 28px;
     line-height: 130%;
     letter-spacing: 0%;
-    text-align: center;
     color: #7D7F91;
     transition: all 0.3s ease;
 }
@@ -106,6 +127,7 @@
     text-align: center;
     color: #7D7F91;
     transition: all 0.3s ease;
+    margin: 0;
 }
 
 .timeline-entry .company-name{
@@ -113,7 +135,6 @@
     font-size: 20px;
     line-height: 130%;
     letter-spacing: 0%;
-    text-align: right;
     color: #7D7F91;
     transition: all 0.3s ease;
 }
@@ -128,7 +149,6 @@
     font-size: 36px;
     line-height: 130%;
     letter-spacing: 0%;
-    text-align: center;
     color: #212121;
 }
 
@@ -146,9 +166,7 @@
     font-size: 24px;
     line-height: 130%;
     letter-spacing: 0%;
-    text-align: right;
     color: #212121;
-    min-width: 210px;
 }
 
 /* Make current entry active when it's in view */
@@ -210,8 +228,6 @@
     .timeline-entry-current .company-info {
         font-size: 14px;
         font-weight: 600;
-        min-width: unset;
-        max-width: 100%;
     }
     
     .timeline-entry.active .timeline-year {
@@ -227,6 +243,5 @@
     .timeline-entry.active .company-name {
         font-size: 12px;
         font-weight: 600;
-        min-width: unset;
     }
 }
