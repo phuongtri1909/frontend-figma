@@ -102,45 +102,80 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-// Timeline scroll focus effect
+// Timeline scroll focus effect - replace the existing one
 document.addEventListener('DOMContentLoaded', function () {
-    const timelineEntries = document.querySelector('.timeline-entries');
-    const entries = document.querySelectorAll('.timeline-entry');
-
-    if (timelineEntries && entries.length > 0) {
-        // Set first entry as active by default
-        entries[0].classList.add('active');
-
-        // Update active entry based on scroll position
-        timelineEntries.addEventListener('scroll', function () {
-            const scrollTop = timelineEntries.scrollTop;
-            const containerHeight = timelineEntries.offsetHeight;
-
-            // Find which entry is in the middle of the viewport
+    const timelineContainer = document.querySelector('.timeline-container');
+    const timelineEntries = document.querySelectorAll('.timeline-entry');
+    const currentEntry = document.querySelector('.timeline-entry-current');
+    
+    if (timelineContainer && timelineEntries.length > 0) {
+        // Function to check if element is in viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            );
+        }
+        
+        // Add animation class when entries come into view
+        function handleEntryAnimation() {
+            timelineEntries.forEach(entry => {
+                if (isInViewport(entry)) {
+                    entry.classList.add('in-view');
+                }
+            });
+            
+            if (currentEntry && isInViewport(currentEntry)) {
+                currentEntry.classList.add('in-view');
+            }
+        }
+        
+        // Initial check for entries in viewport
+        handleEntryAnimation();
+        
+        // Find active entry based on scroll position
+        function updateActiveEntry() {
             let activeEntry = null;
             let smallestDistance = Infinity;
-
-            entries.forEach(entry => {
+            const windowMiddle = window.innerHeight / 2;
+            
+            // Include current entry in calculations
+            const allEntries = [currentEntry, ...timelineEntries];
+            
+            allEntries.forEach(entry => {
+                if (!entry) return; // Skip if entry is null
+                
                 const rect = entry.getBoundingClientRect();
                 const entryMiddle = rect.top + rect.height / 2;
-                const containerMiddle =
-                    timelineEntries.getBoundingClientRect().top + containerHeight / 2;
-                const distance = Math.abs(entryMiddle - containerMiddle);
-
+                const distance = Math.abs(entryMiddle - windowMiddle);
+                
+                // Remove active class from all entries
+                entry.classList.remove('active');
+                
                 if (distance < smallestDistance) {
                     smallestDistance = distance;
                     activeEntry = entry;
                 }
-
-                // Remove active class from all entries
-                entry.classList.remove('active');
             });
-
-            // Add active class to the entry closest to the middle
+            
+            // Add active class to closest entry
             if (activeEntry) {
                 activeEntry.classList.add('active');
+            } else if (currentEntry) {
+                // If no entry is active, make current entry active by default
+                currentEntry.classList.add('active');
             }
+        }
+        
+        // Update on scroll
+        window.addEventListener('scroll', function() {
+            handleEntryAnimation();
+            updateActiveEntry();
         });
+        
+        // Initial update
+        updateActiveEntry();
     }
 });
 
