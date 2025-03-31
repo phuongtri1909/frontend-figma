@@ -148,6 +148,10 @@
     transition: all 0.3s ease;
 }
 
+.timeline-entry.active .job-des-2 {
+    color: #3C3C3C !important;
+}
+
 /* Active entry (in focus) */
 .timeline-entry.active {
     opacity: 1;
