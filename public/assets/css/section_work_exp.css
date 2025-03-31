@@ -92,6 +92,15 @@
     margin-bottom: 8px;
 }
 
+.job-des-2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #7D7F91;
+}
+
 .timeline-entry-current .job-des {
     font-weight: 400;
     font-size: 16px;
@@ -222,6 +231,10 @@
     }
     
     .timeline-entry-current .job-des {
+        font-size: 12px;
+    }
+
+     .job-des-2 {
         font-size: 12px;
     }
     

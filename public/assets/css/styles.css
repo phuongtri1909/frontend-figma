@@ -1,3 +1,6 @@
+* {
+    text-wrap: balance;
+}
 body {
     font-family: 'Albert Sans', sans-serif;
 }
