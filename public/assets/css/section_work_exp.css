@@ -170,7 +170,7 @@
 
     /* REGULAR ENTRIES - SMALLEST */
     .timeline-entry {
-        padding: 12px 0px;
+        padding: 16px 0px;
     }
     
     .timeline-entry .timeline-year {
@@ -212,11 +212,6 @@
         font-weight: 600;
         min-width: unset;
         max-width: 100%;
-    }
-    
-    /* ACTIVE ENTRY - MEDIUM */
-    .timeline-entry.active {
-        padding: 16px 0px;
     }
     
     .timeline-entry.active .timeline-year {
