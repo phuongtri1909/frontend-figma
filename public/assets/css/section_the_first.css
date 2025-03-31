@@ -60,6 +60,20 @@
     color: #212121;
 }
 
+.text-des{
+    color: #212121;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+@media (max-width: 768px) {
+    .text-des{
+        font-size: 20px;
+    }
+}
+
 /* Floating box that follows cursor */
 .floating-box {
     position: fixed;
