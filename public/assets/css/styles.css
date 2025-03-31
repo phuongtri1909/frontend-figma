@@ -11,78 +11,79 @@ body {
     margin-top: 100rem;
 }
 
-.mt-50{
+.mt-50 {
     margin-top: 50rem;
 }
 
-.mt-30{
+.mt-30 {
     margin-top: 30rem;
 }
 
-.mt-20{
+.mt-20 {
     margin-top: 20rem;
 }
 
-.mt-15{
+.mt-15 {
     margin-top: 15rem;
 }
 
-.mt-10{
+.mt-10 {
     margin-top: 10rem;
 }
 
-.mt-7{
+.mt-7 {
     margin-top: 7rem;
 }
 
-.mb-50{
+.mb-50 {
     margin-bottom: 50rem;
 }
 
-.mb-30{
+.mb-30 {
     margin-bottom: 30rem;
 }
 
-.mb-20{
+.mb-20 {
     margin-bottom: 20rem;
 }
 
-.mb-15{
+.mb-15 {
     margin-bottom: 15rem;
 }
 
-.mb-10{
+.mb-10 {
     margin-bottom: 10rem;
 }
 
-.mb-7{
+.mb-7 {
     margin-bottom: 7rem;
 }
 
-.pt-15{
+.pt-15 {
     padding-top: 15rem;
 }
 
-.pt-10{
+.pt-10 {
     padding-top: 10rem;
 }
 
-.pt-7{
+.pt-7 {
     padding-top: 7rem;
 }
-.pb-20{
+
+.pb-20 {
     padding-bottom: 20rem;
 }
 
-.pb-15{
+.pb-15 {
     padding-bottom: 15rem;
 }
 
-.pb-10{
+.pb-10 {
     padding-bottom: 10rem;
 }
 
-.pb-7{
+.pb-7 {
     padding-bottom: 7rem;
 }
 
@@ -113,7 +114,7 @@ body {
     }
 
     .mt-md-7 {
-        margin-top: 7rem    !important;
+        margin-top: 7rem !important;
     }
 }
 
@@ -132,15 +133,15 @@ body {
     }
 
     .mb-md-15 {
-        margin-bottom: 15rem    !important;
+        margin-bottom: 15rem !important;
     }
 
     .mb-md-10 {
-        margin-bottom: 10rem   !important;
+        margin-bottom: 10rem !important;
     }
 
     .mb-md-7 {
-        margin-bottom: 7rem  !important;
+        margin-bottom: 7rem !important;
     }
 }
 
@@ -230,7 +231,7 @@ header {
 .nav-button:hover .btn-circle:before {
     width: 100%;
     border-radius: 21px;
-    background-color: #000; 
+    background-color: #000;
     border-color: #000;
 }
 
@@ -315,7 +316,7 @@ header {
 
 /* text banner */
 
-.text-banner{
+.text-banner {
     font-size: 20px;
     line-height: 150%;
     color: #3C3C3C;
@@ -325,7 +326,7 @@ header {
 
 /* socials-icons */
 
-.socials-icons a{
+.socials-icons a {
     background-color: #fff;
     color: #838383;
     padding: 9.2px;
@@ -333,14 +334,14 @@ header {
     border: 1.15px solid #F2F4F7;
 }
 
-.socials-icons a:hover{
+.socials-icons a:hover {
     background-color: #049BE5;
     color: #fff;
     border: 1.15px solid #049BE5;
 }
 
-.socials-icons a:hover img{
-   filter: brightness(0) invert(1);
+.socials-icons a:hover img {
+    filter: brightness(0) invert(1);
 }
 
 /* Scroll Down Button với text bo cong theo vòng tròn */
@@ -363,7 +364,7 @@ header {
     object-fit: scale-down;
     border-radius: 50%;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Container cho SVG text cong */
@@ -388,14 +389,17 @@ header {
 
 /* Icon mũi tên khi hover */
 .scroll-down:before {
-    content: ""; /* Xóa content FontAwesome */
+    content: "";
+    /* Xóa content FontAwesome */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 36px; /* Kích thước của SVG */
+    width: 36px;
+    /* Kích thước của SVG */
     height: 36px;
-    background-image: url('../svg/ArrowUpRight.svg'); /* Đường dẫn tương đối đến SVG */
+    background-image: url('../svg/ArrowUpRight.svg');
+    /* Đường dẫn tương đối đến SVG */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -410,8 +414,13 @@ header {
 
 /* Animation xoay theo quỹ đạo */
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Style cho SVG */
@@ -433,7 +442,7 @@ header {
 
 /* mobile-menu-toggle */
 
-.mobile-menu-toggle i{
+.mobile-menu-toggle i {
     position: absolute;
     top: 50%;
     left: 25%;
@@ -453,7 +462,8 @@ header {
     height: 50px;
     border-radius: 50%;
     transition: background-color 0.3s ease;
-    z-index: 1001; /* Đảm bảo nút luôn nằm trên cùng */
+    z-index: 1001;
+    /* Đảm bảo nút luôn nằm trên cùng */
 }
 
 .mobile-menu-toggle:hover {
@@ -487,6 +497,7 @@ body.menu-open .mobile-menu-toggle:hover {
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
 .mobile-menu-overlay .video-background {
     position: fixed;
     top: 0;
@@ -515,8 +526,8 @@ body.menu-open .mobile-menu-toggle:hover {
 }
 
 .mobile-menu-container .nav-buttons {
-    margin-top: 80px; 
-    margin-bottom: auto; 
+    margin-top: 80px;
+    margin-bottom: auto;
     width: 100%;
     max-width: 280px;
 }
@@ -549,11 +560,11 @@ body.menu-open {
     width: 100%;
 }
 
-.mobile-menu-container .btn-circle i{
+.mobile-menu-container .btn-circle i {
     font-size: 26px !important;
 }
 
-.mobile-menu-container .btn-circle span{
+.mobile-menu-container .btn-circle span {
     font-size: 26px !important;
     font-weight: 400 !important;
     line-height: 32.5px;
@@ -578,31 +589,31 @@ body.menu-open {
 
 /* Responsive cho banner section */
 @media (max-width: 991.98px) {
-    
+
     /* Logo trong banner */
     .banner-text img {
-        height: 140px; 
+        height: 140px;
     }
-    
+
     /* Text banner */
     .text-banner {
-        width: 100% !important; 
+        width: 100% !important;
         font-size: 16px;
-        padding: 0 15px; 
+        padding: 0 15px;
     }
-    
+
     /* About-me section */
     #about-me {
         justify-content: end !important;
     }
-    
+
     /* Điều chỉnh scroll-down (avatar) */
     .scroll-down {
         width: 90px;
         height: 90px;
         margin: 10px;
     }
-    
+
     /* Điều chỉnh rotating text */
     .scroll-down .rotating-text {
         width: 140px;
@@ -610,7 +621,7 @@ body.menu-open {
         top: -25px;
         left: -25px;
     }
-    
+
     .rotating-text text {
         font-size: 16px;
     }
@@ -618,38 +629,39 @@ body.menu-open {
 
 /* Extra small devices (portrait phones) */
 @media (max-width: 575.98px) {
+
     /* Banner wrapper */
     .banner-wrapper {
         padding-top: 60px !important;
         padding-bottom: 20px !important;
     }
-    
+
     /* Logo trong banner */
     .banner-text img {
         height: 110px;
     }
-    
+
     /* Text banner */
     .text-banner {
         font-size: 14px;
         margin-top: 1rem !important;
         line-height: 1.4;
     }
-    
-    
+
+
     /* Scroll down button nhỏ hơn trên mobile nhỏ */
     .scroll-down {
         width: 80px;
         height: 80px;
     }
-    
+
     .scroll-down .rotating-text {
         width: 130px;
         height: 130px;
         top: -25px;
         left: -25px;
     }
-    
+
     /* Video background positioning */
     .video-background video {
         object-position: center;
@@ -658,15 +670,16 @@ body.menu-open {
 
 /* Đảm bảo center mobile/tablet */
 @media (max-width: 767.98px) {
+
     /* Đối với header khi scroll */
     header.header-hidden {
         transform: translateY(-100%);
     }
-    
+
     .d-none-small {
         display: none !important;
     }
-    
+
     #banner {
         min-height: 100vh;
         height: auto;
@@ -675,23 +688,23 @@ body.menu-open {
 
 /* modal */
 
-.about-name{
+.about-name {
     font-size: 32px;
     font-weight: 600;
 }
 
-.about-text{
+.about-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     paragraph-spacing: 16px;
 }
 
-.socials-icons-model a{
+.socials-icons-model a {
     background-color: #F2F4F7 !important;
 }
 
-.socials-icons-model a:hover{
+.socials-icons-model a:hover {
     background-color: #049BE5 !important;
     color: #fff !important;
 }
@@ -733,7 +746,7 @@ body.menu-open {
     .skill-tag {
         margin-bottom: 8px;
     }
-    
+
     .skill-tag-text {
         font-size: 14px;
     }
@@ -748,7 +761,7 @@ body.menu-open {
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
-    
+
 }
 
 #product-manager::before {
@@ -762,7 +775,7 @@ body.menu-open {
     flex-shrink: 0;
     aspect-ratio: 1769/995;
     z-index: 1;
-    pointer-events: none; 
+    pointer-events: none;
 }
 
 #product-manager::after {
@@ -827,7 +840,7 @@ body.menu-open {
     right: -5px;
 }
 
-#product-manager .text-1{
+#product-manager .text-1 {
     font-family: Albert Sans;
     font-weight: 500;
     font-size: 24px;
@@ -836,14 +849,14 @@ body.menu-open {
     color: #3C3C3C;
 }
 
-#product-manager .text-2{
+#product-manager .text-2 {
     font-family: Albert Sans;
     font-weight: 500;
     font-size: 24px;
     line-height: 180%;
     letter-spacing: 0%;
     text-align: right;
-    
+
 }
 
 /* Large devices (desktops, less than 1200px) */
@@ -871,32 +884,32 @@ body.menu-open {
         padding: 3px 10px;
         margin-left: 10px;
     }
-    
+
     .vr-text .corner {
         width: 6px;
         height: 6px;
     }
-    
+
     .vr-text .top-left {
         top: -4px;
         left: -4px;
     }
-    
+
     .vr-text .top-right {
         top: -4px;
         right: -4px;
     }
-    
+
     .vr-text .bottom-left {
         bottom: -4px;
         left: -4px;
     }
-    
+
     .vr-text .bottom-right {
         bottom: -4px;
         right: -4px;
     }
-    
+
     /* Adjust spacing in the parent container */
     #product-manager .mb-4 {
         margin-bottom: 1.5rem !important;
@@ -912,27 +925,27 @@ body.menu-open {
         margin-left: 8px;
         border-width: 1.5px;
     }
-    
+
     .vr-text .corner {
         width: 5px;
         height: 5px;
     }
-    
+
     .vr-text .top-left {
         top: -3px;
         left: -3px;
     }
-    
+
     .vr-text .top-right {
         top: -3px;
         right: -3px;
     }
-    
+
     .vr-text .bottom-left {
         bottom: -3px;
         left: -3px;
     }
-    
+
     .vr-text .bottom-right {
         bottom: -3px;
         right: -3px;
@@ -944,20 +957,20 @@ body.menu-open {
     #product-manager .title-product-manager {
         font-size: 2.25rem;
     }
-    
+
     #product-manager .text-1,
     #product-manager .text-2 {
         font-size: 20px;
         line-height: 160%;
     }
-    
+
     #product-manager .text-1 {
         width: 100% !important;
     }
 }
 
 @media (max-width: 575.98px) {
-    
+
     #product-manager .text-1,
     #product-manager .text-2 {
         font-size: 18px
@@ -967,7 +980,7 @@ body.menu-open {
 
 /* footer */
 
-#footer .t-ft{
+#footer .t-ft {
     color: #3B3B3B;
     font-weight: 300;
     font-size: 14px;
@@ -1025,7 +1038,7 @@ body.menu-open {
 .next-project:hover .next-btn-circle:before {
     width: 100%;
     border-radius: 21px;
-    background-color: #000; 
+    background-color: #000;
     border-color: #000;
 }
 
@@ -1065,7 +1078,8 @@ body.menu-open {
 .prev-btn-circle:before {
     content: "";
     position: absolute;
-    left: 0; /* Position circle on left side */
+    left: 0;
+    /* Position circle on left side */
     top: 0;
     width: 42px;
     height: 42px;
@@ -1096,7 +1110,7 @@ body.menu-open {
 .prev-project:hover .prev-btn-circle:before {
     width: 100%;
     border-radius: 21px;
-    background-color: #000; 
+    background-color: #000;
     border-color: #000;
 }
 
@@ -1117,5 +1131,75 @@ body.menu-open {
 
 /* Optional hover effect */
 .prev-project:hover {
-    transform: translateX(-5px);  /* Move left instead of right */
+    transform: translateX(-5px);
+    /* Move left instead of right */
+}
+
+/* mouse pointer */
+.mouse-pointer {
+    position: relative;
+    width: 69.333px;
+    height: 34.264px;
+}
+
+.pointer {
+    position: relative;
+    width: 12.168px;
+    height: 13.983px;
+    margin: 0 0 0 0;
+    background: url(https://static.codia.ai/custom_image/2025-03-31/034425/vector-background.svg) no-repeat center;
+    background-size: cover;
+    z-index: 2;
+}
+
+.frame-mia-than {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 8.333px;
+    position: relative;
+    width: 54.333px;
+    margin: -1.386px 0 0 15px;
+    padding: 3.333px 6.667px 3.333px 6.667px;
+    background: #000000;
+    border-radius: 3.333px;
+}
+
+.mia-than {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 15px;
+    color: #ffffff;
+    font-family: Albert Sans, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: -0.3px;
+    z-index: 1;
+}
+
+@media (max-width: 767.98px) {
+    .mouse-pointer {
+        width: 38.667px;
+        height: 19.652px;
+    }
+
+    .pointer {
+        width: 6.728px;
+        height: 7.732px;
+    }
+
+    .frame-mia-than {
+        margin: -0.693px 0 0 7.333px;
+        width: 28.667px;
+        padding: 1.843px 3.686px;
+    }
+
+    .mia-than {
+        font-size: 6px;
+    }
 }
